@@ -1,0 +1,182 @@
+CRITICAL - 2022-12-07 17:28:42 --> Undefined variable $wordmeaningtags
+in APPPATH\Views\search\search.php on line 80.
+ 1 APPPATH\Views\search\search.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $wordmeaningtags', 'APPPATH\\Views\\search\\search.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 17:29:27 --> Object of class App\Models\WordMeaningTagsModel could not be converted to string
+in APPPATH\Views\search\search.php on line 80.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-07 18:58:56 --> mysqli_sql_exception: Column 'word_meaning_tag_id' in where clause is ambiguous in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `t`.`tag...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`tag...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`tag...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`tag...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordMeaningTagsModel.php(50): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Views\search\search.php(81): App\Models\WordMeaningTagsModel->getwordtags('word_meaning_ta...')
+#7 C:\xampp\htdocs\etkal\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\etkal\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\etkal\system\Common.php(1142): CodeIgniter\View\View->render('search/search', Array, true)
+#10 C:\xampp\htdocs\etkal\app\Controllers\Search.php(37): view('search/search', Array)
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#13 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2022-12-07 18:58:56 --> Column 'word_meaning_tag_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_tag_id` = 3
+GROUP BY `wmt`.`word_meaning_tag_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_tag_id` = 3
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_tag_id` = 3
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_tag_id` = 3
+GROUP BY `wmt`.`word_meaning_tag_id`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordMeaningTagsModel.php(50): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Views\search\search.php(81): App\Models\WordMeaningTagsModel->getwordtags('word_meaning_tag_id = 3')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+11 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 19:01:15 --> Attempt to read property "tag" on array
+in APPPATH\Views\search\search.php on line 81.
+ 1 APPPATH\Views\search\search.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "tag" on array', 'APPPATH\\Views\\search\\search.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 19:02:38 --> Undefined array key "tag"
+in APPPATH\Views\search\search.php on line 81.
+ 1 APPPATH\Views\search\search.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag"', 'APPPATH\\Views\\search\\search.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 19:02:39 --> Undefined array key "tag"
+in APPPATH\Views\search\search.php on line 81.
+ 1 APPPATH\Views\search\search.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag"', 'APPPATH\\Views\\search\\search.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:38:47 --> Undefined array key "tag"
+in APPPATH\Views\search\search.php on line 81.
+ 1 APPPATH\Views\search\search.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag"', 'APPPATH\\Views\\search\\search.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:45:42 --> Cannot use object of type App\Entities\WordMeaning as array
+in APPPATH\Models\WordMeaningModel.php on line 73.
+ 1 APPPATH\Controllers\Meaning.php(123): App\Models\WordMeaningModel->insert_word_meaning([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:54:25 --> Attempt to read property "word" on array
+in APPPATH\Views\search\search.php on line 39.
+ 1 APPPATH\Views\search\search.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Views\\search\\search.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:54:26 --> Attempt to read property "word" on array
+in APPPATH\Views\search\search.php on line 39.
+ 1 APPPATH\Views\search\search.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Views\\search\\search.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:54:26 --> Attempt to read property "word" on array
+in APPPATH\Views\search\search.php on line 39.
+ 1 APPPATH\Views\search\search.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Views\\search\\search.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:55:35 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Search.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:55:37 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Search.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 20:57:56 --> Call to undefined method App\Entities\WordMeaning::get()
+in APPPATH\Models\WordMeaningModel.php on line 74.
+ 1 APPPATH\Controllers\Meaning.php(123): App\Models\WordMeaningModel->insert_word_meaning([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-07 21:00:22 --> Cannot use object of type App\Entities\WordMeaning as array
+in APPPATH\Models\WordMeaningModel.php on line 73.
+ 1 APPPATH\Controllers\Meaning.php(123): App\Models\WordMeaningModel->insert_word_meaning([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,54 @@
+CRITICAL - 2022-10-15 22:43:38 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 74.
+ 1 APPPATH\Controllers\User.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 22:48:08 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 74.
+ 1 APPPATH\Controllers\User.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 74)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 23:23:14 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\User.php(74): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 23:29:01 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\User.php(74): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 23:51:05 --> implode(): Passing null to parameter #1 ($separator) of type array|string is deprecated
+in APPPATH\Controllers\User.php on line 158.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'implode(): Passing null to parameter #1 ($separator) of type array|string is deprecated', 'APPPATH\\Controllers\\User.php', 158)
+ 2 APPPATH\Controllers\User.php(158): implode(null)
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 23:52:59 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\User.php on line 158.
+ 1 APPPATH\Controllers\User.php(158): implode('C:\\xampp\\htdocs\\etkal', null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-15 23:59:37 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\User.php on line 158.
+ 1 APPPATH\Controllers\User.php(158): implode('\',\'', null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

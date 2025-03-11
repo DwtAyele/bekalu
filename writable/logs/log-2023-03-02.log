@@ -1,0 +1,100 @@
+CRITICAL - 2023-03-02 10:12:10 --> Array to string conversion
+in APPPATH\Controllers\Dictionary.php on line 107.
+ 1 APPPATH\Controllers\Dictionary.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Dictionary.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 10:14:17 --> Array to string conversion
+in APPPATH\Controllers\Dictionary.php on line 107.
+ 1 APPPATH\Controllers\Dictionary.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Dictionary.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 10:14:18 --> Array to string conversion
+in APPPATH\Controllers\Dictionary.php on line 107.
+ 1 APPPATH\Controllers\Dictionary.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Dictionary.php', 107)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 10:34:19 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(131): App\Models\MeaningsModel->deleteMeaning('["m_id"')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:09:26 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(132): App\Models\MeaningsModel->deleteMeaning('[m_id = 1 , wm_id = 1 ]')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:09:45 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(132): App\Models\MeaningsModel->deleteMeaning('[m_id = 1 , wm_id = 1 ]')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:09:47 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(132): App\Models\MeaningsModel->deleteMeaning('[m_id = 1 , wm_id = 1 ]')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:11:37 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(132): App\Models\MeaningsModel->deleteMeaning('[m_id => 1 , wm_id => 1 ]')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:14:21 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Controllers\Dictionary.php on line 134.
+ 1 APPPATH\Controllers\Dictionary.php(134): explode('C:\\xampp\\htdocs\\etkal', '[m_id => 1 , wm_id => 1 ]')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 11:48:05 --> Cannot access offset of type string on string
+in APPPATH\Models\MeaningsModel.php on line 92.
+ 1 APPPATH\Controllers\Dictionary.php(133): App\Models\MeaningsModel->deleteMeaning('array(m_id => 1 , wm_id => 1 )')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:14:04 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH\Controllers\Dictionary.php on line 133.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Dictionary.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Dictionary')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Dictionary')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Dictionary', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:18:48 --> Undefined array key 1
+in APPPATH\Controllers\Dictionary.php on line 132.
+ 1 APPPATH\Controllers\Dictionary.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Dictionary.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:19:26 --> Undefined array key 1
+in APPPATH\Controllers\Dictionary.php on line 132.
+ 1 APPPATH\Controllers\Dictionary.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Dictionary.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:19:27 --> Undefined array key 1
+in APPPATH\Controllers\Dictionary.php on line 132.
+ 1 APPPATH\Controllers\Dictionary.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Dictionary.php', 132)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

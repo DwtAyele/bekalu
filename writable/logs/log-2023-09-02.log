@@ -1,0 +1,88 @@
+ERROR - 2023-09-02 20:26:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'kal', 3306, '', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\etkal\system\Session\Handlers\DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp\htdocs\etkal\system\Session\Session.php(920): session_start()
+#5 C:\xampp\htdocs\etkal\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp\htdocs\etkal\system\Config\Services.php(665): CodeIgniter\Session\Session->start()
+#7 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#8 C:\xampp\htdocs\etkal\system\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\etkal\system\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+#11 C:\xampp\htdocs\etkal\system\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(22): session()
+#13 C:\xampp\htdocs\etkal\app\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+#14 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#15 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#16 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#18 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\etkal\system\Session\Handlers\DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp\htdocs\etkal\system\Session\Session.php(920): session_start()
+#4 C:\xampp\htdocs\etkal\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp\htdocs\etkal\system\Config\Services.php(665): CodeIgniter\Session\Session->start()
+#6 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#7 C:\xampp\htdocs\etkal\system\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\etkal\system\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+#10 C:\xampp\htdocs\etkal\system\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(22): session()
+#12 C:\xampp\htdocs\etkal\app\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+#13 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#14 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#15 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-09-02 20:26:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(91): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('FCPATH\\ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(920): session_start()
+ 4 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(665): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH\Libraries\Functions.php(22): session()
+12 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+13 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+14 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 20:56:03 --> Invalid file: /public/wiki/mywiki.html
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/public/wiki/mywiki.html')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('/public/wiki/mywiki.html', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('/public/wiki/mywiki.html')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Home->mywiki()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 22:51:52 --> Invalid file: /public/wiki/mywiki.html
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/public/wiki/mywiki.html')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('/public/wiki/mywiki.html', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('/public/wiki/mywiki.html')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Home->mywiki()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-02 22:52:06 --> Invalid file: /public/wiki/mywiki.html
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/public/wiki/mywiki.html')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('/public/wiki/mywiki.html', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('/public/wiki/mywiki.html')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Home->mywiki()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

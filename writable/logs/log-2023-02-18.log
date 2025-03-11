@@ -1,0 +1,127 @@
+CRITICAL - 2023-02-18 17:22:12 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\search\search2.php on line 47.
+ 1 APPPATH\Views\search\search2.php(47): date('Y-m-d h:i:sa', '2023-02-17 14:34:45')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 17:34:46 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\search\search2.php on line 47.
+ 1 APPPATH\Views\search\search2.php(47): date('Y-m-d h:i:sa', '2023-02-17 14:17:09')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 17:46:35 --> Class "Time" not found
+in APPPATH\Views\search\search2.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 17:46:39 --> Class "Time" not found
+in APPPATH\Views\search\search2.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 17:47:08 --> Class "Time" not found
+in APPPATH\Views\search\search2.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 17:58:17 --> Call to a member function humanize() on bool
+in APPPATH\Views\search\search2.php on line 55.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 18:05:06 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\search\search2.php on line 51.
+ 1 APPPATH\Views\search\search2.php(51): date('D/M/Y h:i:s', '2023-02-17 14:34:45')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 18:05:08 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\search\search2.php on line 51.
+ 1 APPPATH\Views\search\search2.php(51): date('D/M/Y h:i:s', '2023-02-17 14:34:45')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 18:09:01 --> Call to a member function humanize() on string
+in APPPATH\Views\search\search.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 19:10:35 --> Undefined array key 0
+in APPPATH\Controllers\Search.php on line 94.
+ 1 APPPATH\Controllers\Search.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Search.php', 94)
+ 2 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 19:32:38 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\Search.php on line 105.
+ 1 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 19:33:27 --> Undefined array key 0
+in APPPATH\Controllers\Search.php on line 109.
+ 1 APPPATH\Controllers\Search.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Search.php', 109)
+ 2 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 19:33:46 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, array given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 954.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->like('w.word', [], 'after')
+ 2 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('like', [...])
+ 3 APPPATH\Controllers\Search.php(113): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', [])
+ 4 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

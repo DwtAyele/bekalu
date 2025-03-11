@@ -1,0 +1,137 @@
+CRITICAL - 2023-02-06 13:22:35 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:27:11 --> Call to undefined method App\Models\WordMeaningModel::getFieldCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(109): CodeIgniter\Model->__call('getFieldCount', [])
+ 2 APPPATH\Controllers\Search.php(33): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:27:25 --> Call to undefined method App\Models\WordMeaningModel::getFieldCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(109): CodeIgniter\Model->__call('getFieldCount', [])
+ 2 APPPATH\Controllers\Search.php(33): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:27:26 --> Call to undefined method App\Models\WordMeaningModel::getFieldCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(109): CodeIgniter\Model->__call('getFieldCount', [])
+ 2 APPPATH\Controllers\Search.php(33): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:27:47 --> Call to undefined method App\Models\WordMeaningModel::getNumRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(109): CodeIgniter\Model->__call('getNumRows', [])
+ 2 APPPATH\Controllers\Search.php(33): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:27:48 --> Call to undefined method App\Models\WordMeaningModel::getNumRows
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(109): CodeIgniter\Model->__call('getNumRows', [])
+ 2 APPPATH\Controllers\Search.php(33): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:28:52 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:30:25 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:38:24 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 13:38:27 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 17:27:05 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Search.php on line 96.
+ 1 APPPATH\Controllers\Search.php(96): array_diff([...], [...])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 17:27:45 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Search.php on line 96.
+ 1 APPPATH\Controllers\Search.php(96): array_diff([...], [...])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 17:33:27 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Search.php on line 98.
+ 1 APPPATH\Controllers\Search.php(98): array_unique([...])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 17:33:29 --> Object of class stdClass could not be converted to string
+in APPPATH\Controllers\Search.php on line 98.
+ 1 APPPATH\Controllers\Search.php(98): array_unique([...])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 17:42:26 --> CodeIgniter\Database\BaseBuilder::whereNotIn(): Argument #1 ($key) must be of type ?string, array given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 813.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->whereNotIn([...])
+ 2 APPPATH\Models\WordMeaningModel.php(106): CodeIgniter\Model->__call('whereNotIn', [...])
+ 3 APPPATH\Controllers\Search.php(96): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'whereNotIn', 'ላወድኖ')
+ 4 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

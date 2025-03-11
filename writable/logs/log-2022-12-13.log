@@ -1,0 +1,33 @@
+CRITICAL - 2022-12-13 11:57:15 --> The route for "search/search" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('search/search')
+ 2 APPPATH\Controllers\Search.php(54): CodeIgniter\HTTP\RedirectResponse->route(false, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('መዝሙር', '8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 11:59:44 --> The route for "search/search" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('search/search')
+ 2 APPPATH\Controllers\Search.php(54): CodeIgniter\HTTP\RedirectResponse->route(false, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('መዝሙር', '8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 11:59:45 --> The route for "search/search" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('search/search')
+ 2 APPPATH\Controllers\Search.php(54): CodeIgniter\HTTP\RedirectResponse->route(false, [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('መዝሙር', '8')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-13 12:50:46 --> The route for "search/search" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('search/search')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Search.php(56): redirect('search/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('መጠበቂያ ግንብ')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,11 @@
+CRITICAL - 2022-10-01 23:36:00 --> Undefined variable $validation
+in APPPATH\Views\login\login.php on line 13.
+ 1 APPPATH\Views\login\login.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\login\\login.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login/login', [], true)
+ 5 APPPATH\Controllers\User.php(35): view('login/login')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,27 @@
+CRITICAL - 2022-12-08 10:50:40 --> syntax error, unexpected token ";", expecting "="
+in APPPATH\Views\search\search.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 3 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 10:50:54 --> syntax error, unexpected token ";", expecting "="
+in APPPATH\Views\search\search.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 3 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 10:50:55 --> syntax error, unexpected token ";", expecting "="
+in APPPATH\Views\search\search.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 3 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

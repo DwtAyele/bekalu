@@ -1,0 +1,684 @@
+ERROR - 2023-02-25 22:58:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN ...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 22:58:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 22:59:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN ...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 22:59:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN ...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no)) AS የመጨረሻው_ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:00:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:00:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:00:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:00:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:25 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-25 23:04:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-25 23:04:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` O...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ, MAX(wm.page_no) AS የመጨረሻው ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(39): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

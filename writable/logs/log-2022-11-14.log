@@ -1,0 +1,107 @@
+CRITICAL - 2022-11-14 14:03:20 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(30): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 14:07:17 --> Undefined array key "user_id"
+in APPPATH\Controllers\Meaning.php on line 88.
+ 1 APPPATH\Controllers\Meaning.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\Meaning.php', 88)
+ 2 APPPATH\Controllers\Meaning.php(38): App\Controllers\Meaning->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:03:54 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(88): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:04:02 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(88): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:05:53 --> Only the first byte will be assigned to the string offset
+in APPPATH\Controllers\Meaning.php on line 86.
+ 1 APPPATH\Controllers\Meaning.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Only the first byte will be assigned to the string offset', 'APPPATH\\Controllers\\Meaning.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:06:26 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 87.
+ 1 APPPATH\Controllers\Meaning.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 87)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:24:53 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Meaning.php(82): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:48:13 --> array_keys(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 86.
+ 1 APPPATH\Controllers\Meaning.php(86): array_keys(null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 18:48:45 --> implode(): Argument #1 ($pieces) must be of type array, string given
+in APPPATH\Controllers\Meaning.php on line 87.
+ 1 APPPATH\Controllers\Meaning.php(87): implode(',', null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 19:06:35 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\Meaning.php(82): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 19:34:47 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Meaning.php(83): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-14 19:35:35 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Meaning.php(83): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

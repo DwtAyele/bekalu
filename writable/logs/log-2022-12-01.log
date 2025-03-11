@@ -1,0 +1,28 @@
+CRITICAL - 2022-12-01 13:04:29 --> Undefined array key "meaning_id"
+in APPPATH\Controllers\Meaning.php on line 133.
+ 1 APPPATH\Controllers\Meaning.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "meaning_id"', 'APPPATH\\Controllers\\Meaning.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 13:05:58 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 125.
+ 1 APPPATH\Controllers\Meaning.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 13:45:41 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 125.
+ 1 APPPATH\Controllers\Meaning.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:11:00 --> Call to undefined method App\Models\MeaningModel::last_query
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Meaning.php(130): CodeIgniter\Model->__call('last_query', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

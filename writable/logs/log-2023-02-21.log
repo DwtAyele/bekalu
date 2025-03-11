@@ -1,0 +1,2597 @@
+CRITICAL - 2023-02-21 08:57:12 --> array_merge(): Argument #2 must be of type array, null given
+in APPPATH\Controllers\Users.php on line 223.
+ 1 APPPATH\Controllers\Users.php(223): array_merge([...], null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:02:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:02:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:02:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:02:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:02:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:02:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:06:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:06:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:06:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:06:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0.1:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(97): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:14:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:14:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:17:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:17:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:17:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:17:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:17:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:17:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:17:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:17:41 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:17:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:17:42 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:18:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:18:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:18:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:18:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:18:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:18:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:18:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:18:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:18:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:18:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:04 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:36 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 09:20:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 09:20:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc...' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE 0 = :0:
+AND 1 = :1:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 2 = :2:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 16:45:08 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(27): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:16:55 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:17:03 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:17:08 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:17:10 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:18:49 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 17:43:00 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(28): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 17:46:50 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`sho...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`sho...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`sho...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`sho...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 17:46:50 --> Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = :flag:
+GROUP BY `d`.`dictionary_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 17:46:52 --> mysqli_sql_exception: Column 'flag' in where clause is ambiguous in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`sho...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`sho...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`sho...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`sho...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 17:46:52 --> Column 'flag' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = 1
+GROUP BY `d`.`dictionary_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `flag` = :flag:
+GROUP BY `d`.`dictionary_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 19:32:20 --> mysqli_sql_exception: Unknown column 'm.meaning_id' in 'on clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`sho...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`sho...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`sho...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`sho...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 19:32:20 --> Unknown column 'm.meaning_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= :d.flag:
+GROUP BY `d`.`dictionary_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 19:32:22 --> mysqli_sql_exception: Unknown column 'm.meaning_id' in 'on clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`sho...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`sho...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`sho...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`sho...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 19:32:22 --> Unknown column 'm.meaning_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= :d.flag:
+GROUP BY `d`.`dictionary_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-21 19:32:23 --> mysqli_sql_exception: Unknown column 'm.meaning_id' in 'on clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`sho...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`sho...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`sho...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`sho...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-21 19:32:23 --> Unknown column 'm.meaning_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `d`.`short_name`, COUNT(wm.word_meaning_id) AS meanig, COUNT(DISTINCT(wm.page_no)) AS pages, `d`.`flag`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `meanings` AS `m` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+WHERE `d`.`flag` <= :d.flag:
+GROUP BY `d`.`dictionary_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(94): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(30): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 19:34:12 --> Object of class stdClass could not be converted to string
+in SYSTEMPATH\View\Table.php on line 344.
+ 1 APPPATH\Controllers\Dictionary.php(32): CodeIgniter\View\Table->generate()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 19:36:23 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(35): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 19:39:22 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(35): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

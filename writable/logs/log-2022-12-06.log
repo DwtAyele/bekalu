@@ -1,0 +1,17 @@
+CRITICAL - 2022-12-06 10:44:13 --> You cannot use `getCompiledInsert()` in `App\Models\MeaningsModel`. This is a method of the `Query Builder` class.
+in SYSTEMPATH\Model.php on line 790.
+ 1 SYSTEMPATH\Model.php(790): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\MeaningsModel', 'getCompiledInsert()')
+ 2 SYSTEMPATH\Model.php(770): CodeIgniter\Model->checkBuilderMethod('getCompiledInsert')
+ 3 APPPATH\Models\MeaningsModel.php(86): CodeIgniter\Model->__call('getCompiledInsert', [])
+ 4 APPPATH\Controllers\Meaning.php(122): App\Models\MeaningsModel->insert_meanings([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 14:15:27 --> Call to a member function insertID() on bool
+in APPPATH\Models\MeaningsModel.php on line 83.
+ 1 APPPATH\Controllers\Meaning.php(122): App\Models\MeaningsModel->insert_meanings([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

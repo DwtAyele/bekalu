@@ -1,0 +1,439 @@
+ERROR - 2023-02-15 14:04:02 --> mysqli_sql_exception: Unknown column 'All' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `All`\nFR...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `All`\nFR...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `All`\nFR...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `All`\nFR...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\etkal\app\Models\DictionaryAbbrivationModel.php(64): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(182): App\Models\DictionaryAbbrivationModel->get_dictionaryabbrivations_byId(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(162): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-02-15 14:04:02 --> Unknown column 'All' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `All`
+FROM `dictionary_abbrivation`
+WHERE `dictionary_id` = \'4\'
+OR 0 = (\'word_abbrivation\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `All`
+FROM `dictionary_abbrivation`
+WHERE `dictionary_id` = \'4\'
+OR 0 = (\'word_abbrivation\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `All`
+FROM `dictionary_abbrivation`
+WHERE `dictionary_id` = \'4\'
+OR 0 = (\'word_abbrivation\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `All`
+FROM `dictionary_abbrivation`
+WHERE `dictionary_id` = :dictionary_id:
+OR 0 = :0:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\DictionaryAbbrivationModel.php(64): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Meaning.php(182): App\Models\DictionaryAbbrivationModel->get_dictionaryabbrivations_byId([...])
+ 9 APPPATH\Controllers\Meaning.php(162): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676498642_ddede2925e33065fba36.csv', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-15 18:36:25 --> Undefined variable $style
+in APPPATH\Views\dictionary\import.php on line 28.
+ 1 APPPATH\Views\dictionary\import.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $style', 'APPPATH\\Views\\dictionary\\import.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(169): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 18:54:19 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '=' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `word_id...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `word_id...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `word_id...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `word_id...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(97): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(208): App\Models\WordsModel->set_insert_word(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-02-15 18:54:19 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `word_id`
+FROM `words`
+WHERE `word` = \'ŞÆæ!Ï…}X&ûì>\'
+AND `short_note` = \'“}« Ø»b|@—>1d‡ŒÆÚa²ÿ•]‰ Ç(?§½0Œµ ÃT»we‹€6´Ë0`AÌ:İœ*MèÊ)=&ŒÑüú…aò¼)Ü•0zÌ£ãGÚ©Í\\0WV	ïÜåø00óŒÙ»ãeídG--hRÏK‘sÙ>CìQõö½â(šö1ÍèhŠ}J˜WöWyŠ„^^o˜ôWğäQ?)û½%—æ”Öc*\\Zó|ØCb&ãÚ+igª¹¶Ii/ç¬>æ#™]·œ5k¸6ÁÔ\\\\Û•}zÌ\\Z¸6Ád×.†oËâíÃĞå¼šò|ˆÃÇ0ÆãV†ÉnPte–3Ël}‡a*¾3¸²F@—Ö™ï¬“}§ì¹+!˜æìpûĞŒñ•µSóWÒ0Ø[‚+Ãdÿ*­ãJûÙ8å…a²S®sÊşU4	áå¸3ÄÈ­ãÎ);å>|“ı«üqWT0â²Sî?N0Ù¿ÊwEÜ#åÉ8å…a²SîCCÚ©ù+âMOà;¾ƒ˜¥â;£+*tw\'
+AND `Language_id` = \'6\'
+AND `flag` = 5
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `word_id`
+FROM `words`
+WHERE `word` = \'ŞÆæ!Ï…}X&ûì>\'
+AND `short_note` = \'“}« Ø»b|@—>1d‡ŒÆÚa²ÿ•]‰ Ç(?§½0Œµ ÃT»we‹€6´Ë0`AÌ:İœ*MèÊ)=&ŒÑüú…aò¼)Ü•0zÌ£ãGÚ©Í\\0WV	ïÜåø00óŒÙ»ãeídG--hRÏK‘sÙ>CìQõö½â(šö1ÍèhŠ}J˜WöWyŠ„^^o˜ôWğäQ?)û½%—æ”Öc*\\Zó|ØCb&ãÚ+igª¹¶Ii/ç¬>æ#™]·œ5k¸6ÁÔ\\\\Û•}zÌ\\Z¸6Ád×.†oËâíÃĞå¼šò|ˆÃÇ0ÆãV†ÉnPte–3Ël}‡a*¾3¸²F@—Ö™ï¬“}§ì¹+!˜æìpûĞŒñ•µSóWÒ0Ø[‚+Ãdÿ*­ãJûÙ8å…a²S®sÊşU4	áå¸3ÄÈ­ãÎ);å>|“ı«üqWT0â²Sî?N0Ù¿ÊwEÜ#åÉ8å…a²SîCCÚ©ù+âMOà;¾ƒ˜¥â;£+*tw\'
+AND `Language_id` = \'6\'
+AND `flag` = 5
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `word_id`
+FROM `words`
+WHERE `word` = \'ŞÆæ!Ï…}X&ûì>\'
+AND `short_note` = \'“}« Ø»b|@—>1d‡ŒÆÚa²ÿ•]‰ Ç(?§½0Œµ ÃT»we‹€6´Ë0`AÌ:İœ*MèÊ)=&ŒÑüú…aò¼)Ü•0zÌ£ãGÚ©Í\\0WV	ïÜåø00óŒÙ»ãeídG--hRÏK‘sÙ>CìQõö½â(šö1ÍèhŠ}J˜WöWyŠ„^^o˜ôWğäQ?)û½%—æ”Öc*\\Zó|ØCb&ãÚ+igª¹¶Ii/ç¬>æ#™]·œ5k¸6ÁÔ\\\\Û•}zÌ\\Z¸6Ád×.†oËâíÃĞå¼šò|ˆÃÇ0ÆãV†ÉnPte–3Ël}‡a*¾3¸²F@—Ö™ï¬“}§ì¹+!˜æìpûĞŒñ•µSóWÒ0Ø[‚+Ãdÿ*­ãJûÙ8å…a²S®sÊşU4	áå¸3ÄÈ­ãÎ);å>|“ı«üqWT0â²Sî?N0Ù¿ÊwEÜ#åÉ8å…a²SîCCÚ©ù+âMOà;¾ƒ˜¥â;£+*tw\'
+AND `Language_id` = \'6\'
+AND `flag` = 5
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `word_id`
+FROM `words`
+WHERE `word` = :word:
+AND `short_note` = :short_note:
+AND `Language_id` = :Language_id:
+AND `flag` = :flag:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\WordsModel.php(97): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Meaning.php(208): App\Models\WordsModel->set_insert_word([...])
+ 9 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676516059_226a2e3a7d24627abf2f.xlsx', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:11:28 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:11:28 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:11:28\', \'2023-02-15 20:11:28\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:11:28\', \'2023-02-15 20:11:28\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:11:28\', \'2023-02-15 20:11:28\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520688_7edcd9caca0f6c13b044.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:12:02 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:12:02 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:02\', \'2023-02-15 20:12:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:02\', \'2023-02-15 20:12:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:02\', \'2023-02-15 20:12:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520722_675a800e9be8b1243ba6.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:12:06 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:12:06 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:06\', \'2023-02-15 20:12:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:06\', \'2023-02-15 20:12:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:06\', \'2023-02-15 20:12:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520726_2cc4715d6073d9ec1f62.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:12:21 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:12:21 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:21\', \'2023-02-15 20:12:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:21\', \'2023-02-15 20:12:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:12:21\', \'2023-02-15 20:12:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520741_3770ab3690aef60b736c.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:14:01 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:14:01 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:01\', \'2023-02-15 20:14:01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:01\', \'2023-02-15 20:14:01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:01\', \'2023-02-15 20:14:01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520841_79fa54e658129daa65bb.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:14:48 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:14:48 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:48\', \'2023-02-15 20:14:48\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:48\', \'2023-02-15 20:14:48\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:14:48\', \'2023-02-15 20:14:48\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520888_d91af9422dc2154a0af4.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:16:02 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:16:02 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:02\', \'2023-02-15 20:16:02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:02\', \'2023-02-15 20:16:02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:02\', \'2023-02-15 20:16:02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520962_49e959d66f747ad7936b.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:16:04 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:16:04 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:04\', \'2023-02-15 20:16:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:04\', \'2023-02-15 20:16:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (\'1\', 30, \'áŒˆá… 1 \', \'2023-02-15 20:16:04\', \'2023-02-15 20:16:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676520964_135c3acb7a6c62f35692.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:17:14 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:17:14 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:14\', \'2023-02-15 20:17:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:14\', \'2023-02-15 20:17:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:14\', \'2023-02-15 20:17:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676521034_852289186898a3b75fee.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-15 20:17:17 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-15 20:17:17 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:17\', \'2023-02-15 20:17:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:17\', \'2023-02-15 20:17:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (1, 30, \'áŒˆá… 1 \', \'2023-02-15 20:17:17\', \'2023-02-15 20:17:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_dic_abbrivation` (`word_id`, `dictionary_abbrivation_id`, `page_no`, `created_at`, `updated_at`) VALUES (:word_id:, :dictionary_abbrivation_id:, :page_no:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordDicAbbrivationModel.php(63): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(213): App\Models\WordDicAbbrivationModel->set_worddicabb([...])
+10 APPPATH\Controllers\Meaning.php(161): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676521037_0c8a9720853d0b62fbfb.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

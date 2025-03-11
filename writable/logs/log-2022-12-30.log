@@ -1,0 +1,538 @@
+CRITICAL - 2022-12-30 15:03:23 --> Undefined property: App\Controllers\EditMeaning::$session
+in APPPATH\Controllers\EditMeaning.php on line 20.
+ 1 APPPATH\Controllers\EditMeaning.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EditMeaning::$session', 'APPPATH\\Controllers\\EditMeaning.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('409', '391')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:04:06 --> Undefined property: App\Controllers\EditMeaning::$session
+in APPPATH\Controllers\EditMeaning.php on line 20.
+ 1 APPPATH\Controllers\EditMeaning.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EditMeaning::$session', 'APPPATH\\Controllers\\EditMeaning.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('409', '391')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:09:32 --> Undefined property: App\Controllers\EditMeaning::$session
+in APPPATH\Controllers\EditMeaning.php on line 20.
+ 1 APPPATH\Controllers\EditMeaning.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\EditMeaning::$session', 'APPPATH\\Controllers\\EditMeaning.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:10:49 --> Undefined property: App\Libraries\Functions::$request
+in APPPATH\Libraries\Functions.php on line 138.
+ 1 APPPATH\Libraries\Functions.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Libraries\\Functions::$request', 'APPPATH\\Libraries\\Functions.php', 138)
+ 2 APPPATH\Controllers\EditMeaning.php(32): App\Libraries\Functions->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:12:12 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\dictionary\edit.php on line 34.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 4 APPPATH\Controllers\EditMeaning.php(106): view('dictionary/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 15:13:58 --> Call to undefined function form_open_multipart()
+in APPPATH\Views\dictionary\edit.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 4 APPPATH\Controllers\EditMeaning.php(106): view('dictionary/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:47:23 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(85): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:47:38 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(85): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:48:22 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 52.
+ 1 APPPATH\Views\dictionary\edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(85): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:48:48 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 52.
+ 1 APPPATH\Views\dictionary\edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(85): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:48:53 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 52.
+ 1 APPPATH\Views\dictionary\edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(85): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:49:58 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 52.
+ 1 APPPATH\Views\dictionary\edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:50:04 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 52.
+ 1 APPPATH\Views\dictionary\edit.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 52)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 19:57:36 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:04:41 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:04:42 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:04:59 --> Request URI segment is out of range: 4
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(4)
+ 2 APPPATH\Views\dictionary\edit.php(33): CodeIgniter\HTTP\URI->getSegment(4)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 6 APPPATH\Controllers\EditMeaning.php(86): view('dictionary/edit', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:17:09 --> Undefined array key "word_id"
+in APPPATH\Controllers\EditMeaning.php on line 38.
+ 1 APPPATH\Controllers\EditMeaning.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word_id"', 'APPPATH\\Controllers\\EditMeaning.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 20:54:25 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH\Controllers\EditMeaning.php on line 94.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH\\Controllers\\EditMeaning.php', 94)
+ 2 APPPATH\Controllers\EditMeaning.php(94): trim(null)
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 21:15:33 --> Undefined variable $dictionary_id
+in APPPATH\Views\dictionary\edit.php on line 105.
+ 1 APPPATH\Views\dictionary\edit.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dictionary_id', 'APPPATH\\Views\\dictionary\\edit.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(124): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 21:17:50 --> Undefined variable $dictionary_id
+in APPPATH\Views\dictionary\edit.php on line 105.
+ 1 APPPATH\Views\dictionary\edit.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dictionary_id', 'APPPATH\\Views\\dictionary\\edit.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 21:18:26 --> Undefined variable $short_note
+in APPPATH\Views\dictionary\edit.php on line 80.
+ 1 APPPATH\Views\dictionary\edit.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $short_note', 'APPPATH\\Views\\dictionary\\edit.php', 80)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('8')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:14:41 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 49.
+ 1 APPPATH\Views\dictionary\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(130): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:15:33 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 49.
+ 1 APPPATH\Views\dictionary\edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(130): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:23:32 --> Undefined variable $tags_select
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags_select', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(130): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:38:51 --> Undefined variable $tags
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '65')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:39:02 --> Undefined variable $tags
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '65')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:39:50 --> Undefined variable $tags
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:40:28 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:42:45 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:42:46 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:43:26 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:43:27 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:43:28 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:43:28 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 22:43:28 --> form_multiselect(): Argument #2 ($options) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\edit.php on line 278
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\edit.php(278): form_multiselect('tag[]', 'C:\\xampp\\htdocs\\etkal', [...], 'class="form-control select2 js-example-basic-multiple" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 22:45:02 --> mysqli_sql_exception: Column 'word_meaning_id' in where clause is ambiguous in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `t`.`tag...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`tag...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`tag...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`tag...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordMeaningTagsModel.php(50): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(174): App\Models\WordMeaningTagsModel->getwordtags(Array)
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-30 22:45:02 --> Column 'word_meaning_id' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `t`.`tag`, `t`.`abbreviation`, `wmt`.`word_meaning_id`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `word_meaning_id` = :word_meaning_id:
+GROUP BY `wmt`.`word_meaning_tag_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordMeaningTagsModel.php(50): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(174): App\Models\WordMeaningTagsModel->getwordtags([...])
+ 8 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-30 22:50:14 --> mysqli_sql_exception: Column 'tag_id' in field list is ambiguous in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tag_id`...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tag_id`...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tag_id`...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tag_id`...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordMeaningTagsModel.php(51): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(174): App\Models\WordMeaningTagsModel->getwordtags(Array)
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-30 22:50:14 --> Column 'tag_id' in field list is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tag_id`, `tag`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `wmt`.`word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tag_id`, `tag`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `wmt`.`word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tag_id`, `tag`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `wmt`.`word_meaning_id` = \'65\'
+GROUP BY `wmt`.`word_meaning_tag_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tag_id`, `tag`
+FROM (`word_meaning_tags`, `word_meaning_tags` AS `wmt`)
+JOIN `tags` AS `t` ON `wmt`.`tag_id` = `t`.`tag_id`
+WHERE `wmt`.`word_meaning_id` = :wmt.word_meaning_id:
+GROUP BY `wmt`.`word_meaning_tag_id`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordMeaningTagsModel.php(51): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(174): App\Models\WordMeaningTagsModel->getwordtags([...])
+ 8 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:02:57 --> Undefined variable $word_tags
+in APPPATH\Controllers\EditMeaning.php on line 178.
+ 1 APPPATH\Controllers\EditMeaning.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word_tags', 'APPPATH\\Controllers\\EditMeaning.php', 178)
+ 2 APPPATH\Controllers\EditMeaning.php(33): App\Controllers\EditMeaning->edit_page('1')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '65')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:03:57 --> Undefined variable $tags_select
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags_select', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '65')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:10:33 --> Undefined variable $tags_select
+in APPPATH\Views\dictionary\edit.php on line 278.
+ 1 APPPATH\Views\dictionary\edit.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags_select', 'APPPATH\\Views\\dictionary\\edit.php', 278)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(62): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1', '65')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:28:48 --> Undefined array key "tag_id"
+in APPPATH\Controllers\EditMeaning.php on line 175.
+ 1 APPPATH\Controllers\EditMeaning.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\EditMeaning.php', 175)
+ 2 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:29:11 --> Undefined array key "tag_id"
+in APPPATH\Controllers\EditMeaning.php on line 175.
+ 1 APPPATH\Controllers\EditMeaning.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\EditMeaning.php', 175)
+ 2 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:30:04 --> Undefined array key "tag_id"
+in APPPATH\Controllers\EditMeaning.php on line 176.
+ 1 APPPATH\Controllers\EditMeaning.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\EditMeaning.php', 176)
+ 2 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:31:14 --> Undefined array key "tag_id"
+in APPPATH\Controllers\EditMeaning.php on line 176.
+ 1 APPPATH\Controllers\EditMeaning.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\EditMeaning.php', 176)
+ 2 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 23:31:26 --> Undefined array key 1
+in APPPATH\Controllers\EditMeaning.php on line 176.
+ 1 APPPATH\Controllers\EditMeaning.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\EditMeaning.php', 176)
+ 2 APPPATH\Controllers\EditMeaning.php(129): App\Controllers\EditMeaning->edit_page('1', '65')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,7 @@
+CRITICAL - 2023-01-19 01:32:48 --> CodeIgniter\Controller::validateData(): Argument #1 ($data) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Search.php on line 48
+in SYSTEMPATH\Controller.php on line 151.
+ 1 APPPATH\Controllers\Search.php(48): CodeIgniter\Controller->validateData('get', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

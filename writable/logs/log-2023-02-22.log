@@ -1,0 +1,480 @@
+CRITICAL - 2023-02-22 08:55:24 --> Undefined variable $image
+in APPPATH\Views\partials\navbar.php on line 47.
+ 1 APPPATH\Views\partials\navbar.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $image', 'APPPATH\\Views\\partials\\navbar.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/navbar', null, true)
+ 5 APPPATH\Views\default.php(6): CodeIgniter\View\View->include('partials/navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(36): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 10:20:54 --> Call to undefined method App\Models\DictionaryModel::orderdby
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Model->__call('orderdby', [...])
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 10:21:14 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #1 ($orderBy) must be of type string, array given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1408.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->orderBy([...])
+ 2 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:07:35 --> Array to string conversion
+in APPPATH\Models\DictionaryModel.php on line 92.
+ 1 APPPATH\Models\DictionaryModel.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Models\\DictionaryModel.php', 92)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:09:03 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:09:14 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:09:23 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:10:21 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:10:23 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:10:28 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:10:37 --> foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\Dictionary.php on line 35.
+ 1 APPPATH\Controllers\Dictionary.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Controllers\\Dictionary.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:12:38 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray()
+in APPPATH\Models\DictionaryModel.php on line 100.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray()', 'APPPATH\\Models\\DictionaryModel.php', 100)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:12:58 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray()
+in APPPATH\Models\DictionaryModel.php on line 100.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray()', 'APPPATH\\Models\\DictionaryModel.php', 100)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:13:00 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray()
+in APPPATH\Models\DictionaryModel.php on line 100.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray()', 'APPPATH\\Models\\DictionaryModel.php', 100)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:13:00 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray()
+in APPPATH\Models\DictionaryModel.php on line 100.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray()', 'APPPATH\\Models\\DictionaryModel.php', 100)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 18:13:01 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray()
+in APPPATH\Models\DictionaryModel.php on line 100.
+ 1 APPPATH\Models\DictionaryModel.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray()', 'APPPATH\\Models\\DictionaryModel.php', 100)
+ 2 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-22 18:20:58 --> mysqli_sql_exception: Unknown column 'd.flag፥d.dictionary_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(101): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): App\Models\DictionaryModel->get_dictionary_data('d.short_name,CO...', 'd.dictionary_id...', 'wm.page_no', 'wm.page_no')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-22 18:20:58 --> Unknown column 'd.flag፥d.dictionary_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no) AS row_num, `d`.`short_name`, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`flag፥d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 2
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no) AS row_num, `d`.`short_name`, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`flag፥d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 2
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no) AS row_num, `d`.`short_name`, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`flag፥d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 2
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no) AS row_num, `d`.`short_name`, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`flag፥d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 2
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(101): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(71): App\Models\DictionaryModel->get_dictionary_data('d.short_name,COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no, d.flag፥d.dictionary_id', 'd.dictionary_id =2', 'wm.page_no', 'wm.page_no')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-22 18:40:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryModel.php(101): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-22 18:40:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(PARTITION BY d.short_nameORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(PARTITION BY d.short_nameORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(PARTITION BY d.short_nameORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= 10
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(PARTITION BY d.short_nameORDER BY d.short_name) AS row_num, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`, COUNT(DISTINCT(wm.word_meaning_id)) AS ትርጉሞች, COUNT(DISTINCT(wm.page_no)) AS ገጽ
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`flag` <= :d.flag:
+GROUP BY `d`.`dictionary_id`
+ORDER BY `d`.`short_name`', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryModel.php(101): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Dictionary.php(34): App\Models\DictionaryModel->get_dictionary_data()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:12:21 --> Undefined variable $dic
+in APPPATH\Views\dictionary\diclist.php on line 41.
+ 1 APPPATH\Views\dictionary\diclist.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dic', 'APPPATH\\Views\\dictionary\\diclist.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(49): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:12:46 --> Array to string conversion
+in APPPATH\Views\dictionary\diclist.php on line 41.
+ 1 APPPATH\Views\dictionary\diclist.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\diclist.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:12:48 --> Array to string conversion
+in APPPATH\Views\dictionary\diclist.php on line 41.
+ 1 APPPATH\Views\dictionary\diclist.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\diclist.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:13:10 --> Undefined variable $table
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:13:12 --> Undefined variable $table
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:13:56 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\default.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:14:10 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\default.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:14:17 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\default.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+10 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:16:01 --> Undefined variable $table
+in APPPATH\Views\dictionary\diclist.php on line 45.
+ 1 APPPATH\Views\dictionary\diclist.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH\\Views\\dictionary\\diclist.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:16:04 --> Undefined variable $table
+in APPPATH\Views\dictionary\diclist.php on line 45.
+ 1 APPPATH\Views\dictionary\diclist.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'APPPATH\\Views\\dictionary\\diclist.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:18:11 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:22:07 --> Attempt to read property "dictionary_id" on array
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dictionary_id" on array', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(98): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:22:25 --> Attempt to read property "dictionary_id" on array
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dictionary_id" on array', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(98): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:22:26 --> Attempt to read property "dictionary_id" on array
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dictionary_id" on array', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(98): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:37:46 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('2')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:43:24 --> Array to string conversion
+in APPPATH\Views\dictionary\diclist.php on line 42.
+ 1 APPPATH\Views\dictionary\diclist.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\diclist.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(52): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:49:17 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:51:14 --> Object of class App\Models\DictionaryModel could not be converted to string
+in APPPATH\Models\DictionaryModel.php on line 101.
+ 1 APPPATH\Controllers\Dictionary.php(72): App\Models\DictionaryModel->get_dictionary_data('COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no,d.short_name, d.flag,d.dictionary_id', 'd.dictionary_id =4', 'wm.page_no', 'wm.page_no, m.meaning_id')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:53:15 --> Object of class App\Models\DictionaryModel could not be converted to string
+in APPPATH\Models\DictionaryModel.php on line 101.
+ 1 APPPATH\Controllers\Dictionary.php(72): App\Models\DictionaryModel->get_dictionary_data('COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no,d.short_name, d.flag,d.dictionary_id', 'd.dictionary_id =4', 'wm.page_no', 'wm.page_no, m.meaning_id')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:53:16 --> Object of class App\Models\DictionaryModel could not be converted to string
+in APPPATH\Models\DictionaryModel.php on line 101.
+ 1 APPPATH\Controllers\Dictionary.php(72): App\Models\DictionaryModel->get_dictionary_data('COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no,d.short_name, d.flag,d.dictionary_id', 'd.dictionary_id =4', 'wm.page_no', 'wm.page_no, m.meaning_id')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:59:37 --> Object of class App\Models\DictionaryModel could not be converted to string
+in APPPATH\Models\DictionaryModel.php on line 101.
+ 1 APPPATH\Controllers\Dictionary.php(72): App\Models\DictionaryModel->get_dictionary_data('COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no,d.short_name, d.flag,d.dictionary_id', 'd.dictionary_id =4', 'wm.page_no', 'wm.page_no, m.meaning_id')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 19:59:38 --> Object of class App\Models\DictionaryModel could not be converted to string
+in APPPATH\Models\DictionaryModel.php on line 101.
+ 1 APPPATH\Controllers\Dictionary.php(72): App\Models\DictionaryModel->get_dictionary_data('COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, wm.page_no,d.short_name, d.flag,d.dictionary_id', 'd.dictionary_id =4', 'wm.page_no', 'wm.page_no, m.meaning_id')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 20:00:33 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 20:00:58 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-22 20:01:00 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Dictionary.php on line 89.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

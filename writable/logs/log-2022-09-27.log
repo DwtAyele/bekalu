@@ -1,0 +1,102 @@
+CRITICAL - 2022-09-27 22:40:14 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:15 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:15 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:15 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:15 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:18 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:18 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:18 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:19 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:19 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:19 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:19 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:21 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:25 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:26 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:26 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:40:26 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:42 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:46 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:47 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:47 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:48 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:56 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:41:57 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:44:47 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:44:48 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:44:48 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:04 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:05 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:05 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:05 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:05 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:06 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-27 22:45:24 --> Cannot redeclare App\Controllers\Home::register()
+in APPPATH\Controllers\Home.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

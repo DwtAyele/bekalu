@@ -1,0 +1,157 @@
+CRITICAL - 2022-10-21 07:38:19 --> Call to a member function insert() on null
+in APPPATH\Controllers\User.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 08:57:32 --> Undefined property: App\Controllers\User::$db
+in APPPATH\Controllers\User.php on line 98.
+ 1 APPPATH\Controllers\User.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\User::$db', 'APPPATH\\Controllers\\User.php', 98)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->register()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:09:18 --> Call to a member function insert() on null
+in APPPATH\Controllers\Users.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:11:52 --> Call to a member function insert() on null
+in APPPATH\Controllers\Users.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:13:08 --> Undefined property: App\Controllers\Users::$load
+in APPPATH\Controllers\Users.php on line 27.
+ 1 APPPATH\Controllers\Users.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Users::$load', 'APPPATH\\Controllers\\Users.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 09:24:59 --> Call to a member function insert() on null
+in APPPATH\Controllers\Users.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->register()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 10:02:28 --> Constant expression contains invalid operations
+in APPPATH\Models\UsersModel.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2022-10-21 11:34:21 --> mysqli_sql_exception: Table 'mezgebe_kalat.users' doesn't exist in engine in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('dwtk.ayele@gmai...', 'email', Array, NULL)
+#6 C:\xampp\htdocs\etkal\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dwtk.ayele@gmai...', Array, Array)
+#7 C:\xampp\htdocs\etkal\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Users.php(64): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Users->index()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-10-21 11:34:21 --> Table 'mezgebe_kalat.users' doesn't exist in engine
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'dwtk.ayele@gmail.com\'
+AND `flag` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'dwtk.ayele@gmail.com\'
+AND `flag` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'dwtk.ayele@gmail.com\'
+AND `flag` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+AND `flag` = :flag:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('dwtk.ayele@gmail.com', 'email', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'dwtk.ayele@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\Users.php(64): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-21 12:11:28 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-10-21 12:11:28 --> 220 smtp.gmail.com ESMTP w64-20020a627b43000000b005698da68298sm3093253pfc.68 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [199.255.44.250]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor w64-20020a627b43000000b005698da68298sm3093253pfc.68 - gsmtp
+
+ERROR - 2022-10-21 12:12:18 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-10-21 12:12:18 --> 220 smtp.gmail.com ESMTP v2-20020aa799c2000000b00562a237179esm15473932pfi.131 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [199.255.44.250]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor v2-20020aa799c2000000b00562a237179esm15473932pfi.131 - gsmtp
+
+ERROR - 2022-10-21 12:20:29 --> mysqli_sql_exception: Table 'kal.1users' doesn't exist in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `1u...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `1u...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `1u...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `1u...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Controllers\Users.php(128): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Users->register()
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-21 12:29:17 --> Undefined variable $success
+in APPPATH\Views\login\register.php on line 13.
+ 1 APPPATH\Views\login\register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $success', 'APPPATH\\Views\\login\\register.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\register.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login/register', [], true)
+ 5 APPPATH\Controllers\Users.php(144): view('login/register', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->register()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:34:36 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Users.php(245): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\asset\\img\\user', '1666380876_7ea09a90594f25de9fff')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 14:12:36 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Users.php(245): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\public\\asset\\img\\user', '1666386756_8d252ad6fd39631dc7ab')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

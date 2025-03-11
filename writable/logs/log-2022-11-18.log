@@ -1,0 +1,116 @@
+CRITICAL - 2022-11-18 10:42:25 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 77.
+ 1 APPPATH\Controllers\Meaning.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 10:49:13 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 77.
+ 1 APPPATH\Controllers\Meaning.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 10:54:49 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 10:54:56 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 11:10:33 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 13:55:34 --> Undefined array key "user_id"
+in APPPATH\Controllers\Meaning.php on line 141.
+ 1 APPPATH\Controllers\Meaning.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\Meaning.php', 141)
+ 2 APPPATH\Controllers\Meaning.php(43): App\Controllers\Meaning->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 13:55:55 --> Undefined array key "meaning"
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "meaning"', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 13:57:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 13:57:42 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 79.
+ 1 APPPATH\Controllers\Meaning.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 16:56:42 --> Undefined array key "file"
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 APPPATH\Controllers\Meaning.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "file"', 'APPPATH\\Controllers\\Meaning.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:12:33 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\dictionary\add.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\add.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/add', [], true)
+ 9 APPPATH\Controllers\Meaning.php(140): view('dictionary/add')
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->testview()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 17:58:23 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\search\search.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 9 APPPATH\Controllers\Search.php(20): view('search/search')
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 18:01:11 --> Undefined variable $short_name
+in APPPATH\Views\partials\footer.php on line 5.
+ 1 APPPATH\Views\partials\footer.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $short_name', 'APPPATH\\Views\\partials\\footer.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\footer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/footer', null, true)
+ 5 APPPATH\Views\search\search.php(37): CodeIgniter\View\View->include('partials/footer')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 9 APPPATH\Controllers\Search.php(25): view('search/search', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

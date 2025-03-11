@@ -1,0 +1,36 @@
+CRITICAL - 2023-02-01 12:54:10 --> Trying to access array offset on value of type null
+in APPPATH\Models\WordsModel.php on line 106.
+ 1 APPPATH\Models\WordsModel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\WordsModel.php', 106)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordsModel->set_insert_word([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1675284841_fbb482692fb39db53bf1.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 12:56:21 --> Trying to access array offset on value of type null
+in APPPATH\Models\WordsModel.php on line 106.
+ 1 APPPATH\Models\WordsModel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\WordsModel.php', 106)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordsModel->set_insert_word([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1675284975_0e501152c308e3df28ce.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 12:56:47 --> Trying to access array offset on value of type null
+in APPPATH\Models\WordsModel.php on line 106.
+ 1 APPPATH\Models\WordsModel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\WordsModel.php', 106)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordsModel->set_insert_word([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1675285000_5236dc16eadf37596973.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 13:03:23 --> Trying to access array offset on value of type null
+in APPPATH\Models\WordsModel.php on line 106.
+ 1 APPPATH\Models\WordsModel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\WordsModel.php', 106)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordsModel->set_insert_word([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1675285396_a6134a26b0bfa11594a7.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
