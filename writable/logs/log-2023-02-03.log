@@ -1,0 +1,1320 @@
+CRITICAL - 2023-02-03 13:33:35 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:39 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:40 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:41 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:41 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:41 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:53 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 13:34:54 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:14:09 --> Call to undefined method App\Models\WordMeaningModel::is_null
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(110): CodeIgniter\Model->__call('is_null', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:15:35 --> Call to a member function groupBy() on null
+in APPPATH\Models\WordMeaningModel.php on line 113.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:16:23 --> Call to a member function where() on null
+in APPPATH\Models\WordMeaningModel.php on line 110.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:27:55 --> Call to a member function where() on null
+in APPPATH\Models\WordMeaningModel.php on line 110.
+ 1 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:28:13 --> Call to undefined method App\Models\WordMeaningModel::whenNot
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(113): CodeIgniter\Model->__call('whenNot', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:32:04 --> Call to undefined method App\Models\WordMeaningModel::whenNot
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(113): CodeIgniter\Model->__call('whenNot', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:32:05 --> Call to undefined method App\Models\WordMeaningModel::whenNot
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(113): CodeIgniter\Model->__call('whenNot', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:32:06 --> Call to undefined method App\Models\WordMeaningModel::whenNot
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(113): CodeIgniter\Model->__call('whenNot', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:32:08 --> Call to undefined method App\Models\WordMeaningModel::whenNot
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(113): CodeIgniter\Model->__call('whenNot', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:35:27 --> Undefined variable $status
+in APPPATH\Models\WordMeaningModel.php on line 112.
+ 1 APPPATH\Models\WordMeaningModel.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $status', 'APPPATH\\Models\\WordMeaningModel.php', 112)
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:36:33 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:36:40 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:26 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:27 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:28 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:28 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:28 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:28 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:28 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:37:29 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:38:29 --> Call to undefined method App\Models\WordMeaningModel::when
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(115): CodeIgniter\Model->__call('when', [...])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 17:55:47 --> Call to a member function limit() on null
+in APPPATH\Models\WordMeaningModel.php on line 117.
+ 1 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where', 'like("w.word",ሆድን, "before")')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:05:35 --> You cannot use `getCompiledSelect()` in `App\Models\WordMeaningModel`. This is a method of the `Query Builder` class.
+in SYSTEMPATH\Model.php on line 790.
+ 1 SYSTEMPATH\Model.php(790): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\WordMeaningModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(770): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 5 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:06:11 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:06:27 --> Undefined property: stdClass::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:06:55 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:19 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:20 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:21 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:22 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:22 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:22 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:07:43 --> You cannot use `getCompiledSelect()` in `App\Models\WordMeaningModel`. This is a method of the `Query Builder` class.
+in SYSTEMPATH\Model.php on line 790.
+ 1 SYSTEMPATH\Model.php(790): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\WordMeaningModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(770): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 5 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:08:58 --> Call to undefined method App\Models\WordMeaningModel::getQueryString
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getQueryString', [])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:09:21 --> Call to undefined method App\Models\WordMeaningModel::getQueryString
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getQueryString', [])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:09:22 --> Call to undefined method App\Models\WordMeaningModel::getQueryString
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getQueryString', [])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:11:10 --> Call to undefined method App\Models\WordMeaningModel::getQuery
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getQuery', [])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:11:11 --> Call to undefined method App\Models\WordMeaningModel::getQuery
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getQuery', [])
+ 2 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:13:35 --> You cannot use `getCompiledSelect()` in `App\Models\WordMeaningModel`. This is a method of the `Query Builder` class.
+in SYSTEMPATH\Model.php on line 790.
+ 1 SYSTEMPATH\Model.php(790): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\WordMeaningModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(770): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Search.php(83): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where')
+ 5 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:26 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:28 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:29 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:29 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:29 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:30 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:31 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:31 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:31 --> Call to undefined method App\Models\WordMeaningModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(83): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:15:46 --> You cannot use `getCompiledSelect()` in `App\Models\WordMeaningModel`. This is a method of the `Query Builder` class.
+in SYSTEMPATH\Model.php on line 790.
+ 1 SYSTEMPATH\Model.php(790): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\WordMeaningModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(770): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'like("w.word",ሆድን, "before")')
+ 5 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:18:29 --> Call to a member function getResult() on array
+in APPPATH\Controllers\Search.php on line 85.
+ 1 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 18:19:07 --> Undefined property: mysqli::$word
+in APPPATH\Views\search\search2.php on line 41.
+ 1 APPPATH\Views\search\search2.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: mysqli::$word', 'APPPATH\\Views\\search\\search2.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:28:38 --> mysqli_sql_exception: Unknown column 'ሆድን' in 'where clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:28:38 --> Unknown column 'ሆድን' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:29:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:29:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 ;like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 ;like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 ;like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 ;like("w.word",ሆድን, "before")
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:31:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:31:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:31:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:31:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:31:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:31:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:31:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:31:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:31:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:31:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORD...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3; like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:32:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LI...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:32:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LI...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word",ሆድን,before)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:33:28 --> mysqli_sql_exception: Unknown column '3AND' in 'where clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:33:28 --> Unknown column '3AND' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-03 18:34:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `...' at line 9 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(89): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(63): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-03 18:34:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `...' at line 9
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `num_like`, `num_dislike`, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` <= 3 AND like("w.word"%ሆድን)
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY `w`.`word` ASC
+ LIMIT 5, 2', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get(2, 5)
+ 6 APPPATH\Controllers\Search.php(89): CodeIgniter\Model->__call('get', [...])
+ 7 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:15:30 --> Undefined array key "w.word"
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "w.word"', 'APPPATH\\Models\\WordMeaningModel.php', 118)
+ 2 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'like("w.word",ሆድን, "before")')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:16:06 --> Undefined array key "w.word"
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "w.word"', 'APPPATH\\Models\\WordMeaningModel.php', 118)
+ 2 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'like("w.word",ሆድን, "before")')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:18:13 --> Undefined array key "w.word"
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "w.word"', 'APPPATH\\Models\\WordMeaningModel.php', 118)
+ 2 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'ሆድን')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:18:15 --> Undefined array key "w.word"
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "w.word"', 'APPPATH\\Models\\WordMeaningModel.php', 118)
+ 2 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'ሆድን')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:18:16 --> Undefined array key "w.word"
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Models\WordMeaningModel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "w.word"', 'APPPATH\\Models\\WordMeaningModel.php', 118)
+ 2 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'ሆድን')
+ 3 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:18:39 --> Cannot access offset of type string on string
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'ሆድን')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-03 19:18:41 --> Cannot access offset of type string on string
+in APPPATH\Models\WordMeaningModel.php on line 118.
+ 1 APPPATH\Controllers\Search.php(88): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'ASC', 'where', 'ሆድን')
+ 2 APPPATH\Controllers\Search.php(63): App\Controllers\Search->find_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

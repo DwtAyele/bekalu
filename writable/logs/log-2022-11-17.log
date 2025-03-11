@@ -1,0 +1,298 @@
+CRITICAL - 2022-11-17 01:21:37 --> Undefined array key "user_id"
+in APPPATH\Controllers\Meaning.php on line 122.
+ 1 APPPATH\Controllers\Meaning.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\Meaning.php', 122)
+ 2 APPPATH\Controllers\Meaning.php(42): App\Controllers\Meaning->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 01:22:42 --> Undefined array key "user_id"
+in APPPATH\Controllers\Meaning.php on line 122.
+ 1 APPPATH\Controllers\Meaning.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\Meaning.php', 122)
+ 2 APPPATH\Controllers\Meaning.php(42): App\Controllers\Meaning->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 01:33:35 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-17 01:33:35 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (7, 6, \'1\', 1, 5, \'2022-11-17 01:33:35\', \'2022-11-17 01:33:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (7, 6, \'1\', 1, 5, \'2022-11-17 01:33:35\', \'2022-11-17 01:33:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (7, 6, \'1\', 1, 5, \'2022-11-17 01:33:35\', \'2022-11-17 01:33:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (:word_id:, :meaning_id:, :user_id:, :dictionary_id:, :flag:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Meaning.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 01:36:39 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-17 01:36:39 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (8, 7, \'1\', 1, 5, \'2022-11-17 01:36:39\', \'2022-11-17 01:36:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (8, 7, \'1\', 1, 5, \'2022-11-17 01:36:39\', \'2022-11-17 01:36:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (8, 7, \'1\', 1, 5, \'2022-11-17 01:36:39\', \'2022-11-17 01:36:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (:word_id:, :meaning_id:, :user_id:, :dictionary_id:, :flag:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Meaning.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 01:39:27 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-17 01:39:27 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (9, 8, \'1\', 1, 5, \'2022-11-17 01:39:27\', \'2022-11-17 01:39:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (9, 8, \'1\', 1, 5, \'2022-11-17 01:39:27\', \'2022-11-17 01:39:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (9, 8, \'1\', 1, 5, \'2022-11-17 01:39:27\', \'2022-11-17 01:39:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`word_id`, `meaning_id`, `user_id`, `dictionary_id`, `flag`, `created_at`, `updated_at`) VALUES (:word_id:, :meaning_id:, :user_id:, :dictionary_id:, :flag:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Meaning.php(89): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 02:20:36 --> mysqli_sql_exception: Duplicate entry '1' for key 'tag' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', NULL, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(814): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(105): CodeIgniter\BaseModel->insertBatch(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-11-17 02:20:36 --> Duplicate entry '1' for key 'tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1,13)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1,13)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1,13)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1,13)', null, false)
+ 5 SYSTEMPATH\Model.php(312): CodeIgniter\Database\BaseBuilder->insertBatch([...], null, 100)
+ 6 SYSTEMPATH\BaseModel.php(814): CodeIgniter\Model->doInsertBatch([...], null, 100, false)
+ 7 APPPATH\Controllers\Meaning.php(105): CodeIgniter\BaseModel->insertBatch([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 02:23:06 --> mysqli_sql_exception: Duplicate entry '1' for key 'tag' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-17 02:23:06 --> Duplicate entry '1' for key 'tag'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1, 14)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1, 14)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (1, 14)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning_tags` (`tag_id`, `word_meaning_id`) VALUES (:tag_id:, :word_meaning_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Meaning.php(102): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:20:31 --> Undefined array key "word"
+in APPPATH\Models\WordsModel.php on line 71.
+ 1 APPPATH\Models\WordsModel.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Models\\WordsModel.php', 71)
+ 2 APPPATH\Controllers\Meaning.php(81): App\Models\WordsModel->insert_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:26:08 --> Undefined array key "user_id"
+in APPPATH\Models\WordMeaningModel.php on line 57.
+ 1 APPPATH\Models\WordMeaningModel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Models\\WordMeaningModel.php', 57)
+ 2 APPPATH\Controllers\Meaning.php(86): App\Models\WordMeaningModel->insert_word_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:26:35 --> CodeIgniter\Validation\FormatRules::is_natural(): Argument #1 ($str) must be of type ?string, array given, called in C:\xampp\htdocs\etkal\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\FormatRules.php on line 140.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\FormatRules->is_natural([...], null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('word_id', 'word_id', [...], [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(707): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Models\WordMeaningModel.php(62): CodeIgniter\Model->insert([...])
+ 7 APPPATH\Controllers\Meaning.php(86): App\Models\WordMeaningModel->insert_word_meaning([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:30:29 --> Undefined array key "tag_id"
+in APPPATH\Controllers\Meaning.php on line 91.
+ 1 APPPATH\Controllers\Meaning.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\Meaning.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:41:03 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\MeaningModel.php on line 75.
+ 1 APPPATH\Models\MeaningModel.php(75): count(null)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:42:19 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\MeaningModel.php on line 75.
+ 1 APPPATH\Models\MeaningModel.php(75): count(null)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:46:43 --> Trying to access array offset on value of type null
+in APPPATH\Models\MeaningModel.php on line 79.
+ 1 APPPATH\Models\MeaningModel.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\MeaningModel.php', 79)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:51:31 --> Trying to access array offset on value of type null
+in APPPATH\Models\MeaningModel.php on line 79.
+ 1 APPPATH\Models\MeaningModel.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\MeaningModel.php', 79)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 12:52:16 --> Trying to access array offset on value of type null
+in APPPATH\Models\MeaningModel.php on line 79.
+ 1 APPPATH\Models\MeaningModel.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\MeaningModel.php', 79)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:01:47 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Models\MeaningModel.php on line 75.
+ 1 APPPATH\Models\MeaningModel.php(75): count(null)
+ 2 APPPATH\Controllers\Meaning.php(85): App\Models\MeaningModel->insert_meaning([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:33:03 --> array_diff(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Models\TagsModel.php on line 63.
+ 1 APPPATH\Models\TagsModel.php(63): array_diff(null, [...])
+ 2 APPPATH\Controllers\Meaning.php(87): App\Models\TagsModel->insert_tag([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:33:59 --> array_diff(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Models\TagsModel.php on line 63.
+ 1 APPPATH\Models\TagsModel.php(63): array_diff(null, [...])
+ 2 APPPATH\Controllers\Meaning.php(87): App\Models\TagsModel->insert_tag([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:36:53 --> array_diff(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Models\TagsModel.php on line 63.
+ 1 APPPATH\Models\TagsModel.php(63): array_diff(null, [...])
+ 2 APPPATH\Controllers\Meaning.php(87): App\Models\TagsModel->insert_tag([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:36:57 --> array_diff(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Models\TagsModel.php on line 63.
+ 1 APPPATH\Models\TagsModel.php(63): array_diff(null, [...])
+ 2 APPPATH\Controllers\Meaning.php(87): App\Models\TagsModel->insert_tag([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:41:38 --> Undefined array key "tag_id"
+in APPPATH\Models\WordMeaningTagsModel.php on line 48.
+ 1 APPPATH\Models\WordMeaningTagsModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Models\\WordMeaningTagsModel.php', 48)
+ 2 APPPATH\Controllers\Meaning.php(89): App\Models\WordMeaningTagsModel->insert_word_meaning_tags([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:43:28 --> array_diff(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Models\TagsModel.php on line 63.
+ 1 APPPATH\Models\TagsModel.php(63): array_diff(null, [...])
+ 2 APPPATH\Controllers\Meaning.php(89): App\Models\TagsModel->insert_tag([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 13:43:51 --> Undefined array key "tag_id"
+in APPPATH\Controllers\Meaning.php on line 92.
+ 1 APPPATH\Controllers\Meaning.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tag_id"', 'APPPATH\\Controllers\\Meaning.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

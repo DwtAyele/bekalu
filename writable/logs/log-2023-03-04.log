@@ -1,0 +1,34 @@
+CRITICAL - 2023-03-04 18:51:23 --> Please select Dectionary is not a valid Validation template.
+in SYSTEMPATH\Validation\Validation.php on line 567.
+ 1 SYSTEMPATH\Validation\Validation.php(567): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('Please select Dectionary')
+ 2 APPPATH\Views\dictionary\addmeaning.php(132): CodeIgniter\Validation\Validation->showError('dictionary_id', 'Please select Dectionary')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 6 APPPATH\Controllers\Meaning.php(102): view('dictionary/addmeaning', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 18:54:29 --> is_not_unique is not a valid Validation template.
+in SYSTEMPATH\Validation\Validation.php on line 567.
+ 1 SYSTEMPATH\Validation\Validation.php(567): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('is_not_unique')
+ 2 APPPATH\Views\dictionary\addmeaning.php(132): CodeIgniter\Validation\Validation->showError('dictionary_id', 'is_not_unique')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 6 APPPATH\Controllers\Meaning.php(102): view('dictionary/addmeaning', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-04 20:28:16 --> Dictionary is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Dictionary')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('dictionary_id', 'dictionary_id', '0', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(143): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

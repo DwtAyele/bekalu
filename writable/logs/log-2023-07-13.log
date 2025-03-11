@@ -1,0 +1,32 @@
+CRITICAL - 2023-07-13 14:04:13 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 59.
+ 1 APPPATH\Libraries\Functions.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 59)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 14:04:31 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 59.
+ 1 APPPATH\Libraries\Functions.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 59)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 14:04:32 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 59.
+ 1 APPPATH\Libraries\Functions.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 59)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-13 14:04:49 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 59.
+ 1 APPPATH\Libraries\Functions.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 59)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

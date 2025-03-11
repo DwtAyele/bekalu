@@ -1,0 +1,117 @@
+CRITICAL - 2022-12-19 09:46:40 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(185): App\Libraries\Excel_reader->read('./import/1671472000_ebf1e439efc0c662acaf.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:17:43 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 190.
+ 1 APPPATH\Controllers\Meaning.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:18:06 --> Undefined property: App\Libraries\OLERead::$sheets
+in APPPATH\Controllers\Meaning.php on line 190.
+ 1 APPPATH\Controllers\Meaning.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Libraries\\OLERead::$sheets', 'APPPATH\\Controllers\\Meaning.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:29:08 --> fopen(1671492548_284c11da7cfaffe45e72.xls): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Meaning.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(1671492548_284c11da7cfaffe45e72.xls): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Meaning.php', 184)
+ 2 APPPATH\Controllers\Meaning.php(184): fopen('1671492548_284c11da7cfaffe45e72.xls', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:29:38 --> fopen(./import/1671492578_7e1ab1e927464e3ed4f9.xls): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Meaning.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(./import/1671492578_7e1ab1e927464e3ed4f9.xls): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Meaning.php', 184)
+ 2 APPPATH\Controllers\Meaning.php(184): fopen('./import/1671492578_7e1ab1e927464e3ed4f9.xls', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:30:09 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671492609_35fc834ce66443542864.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:31:36 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671492696_ab22777f7389f29f187b.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:33:31 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671492811_a00a86acddaa0331171c.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:34:06 --> fopen(./asset/import/1671492846_089a98a9536cc63774e9.xls): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Meaning.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(./asset/import/1671492846_089a98a9536cc63774e9.xls): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Meaning.php', 184)
+ 2 APPPATH\Controllers\Meaning.php(184): fopen('./asset/import/1671492846_089a98a9536cc63774e9.xls', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:35:01 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('./asset/import/1671492901_fe552289d687e78ef282.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:37:18 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('./asset/import/1671493038_cc976a464e45793a40e8.csv')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:37:41 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(207): App\Libraries\Excel_reader->read('./asset/import/1671493061_8190572aee45be545f0f.csv')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:50:58 --> fopen(./asset/import/1671493858_c0ec3f20406ad16a59fc.csv): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Meaning.php on line 184.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(./asset/import/1671493858_c0ec3f20406ad16a59fc.csv): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Meaning.php', 184)
+ 2 APPPATH\Controllers\Meaning.php(184): fopen('./asset/import/1671493858_c0ec3f20406ad16a59fc.csv', 'r')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:59:22 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 392.
+ 1 APPPATH\Views\dictionary\import.php(57): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(203): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 15:59:25 --> View themes, no current section.
+in SYSTEMPATH\View\View.php on line 392.
+ 1 APPPATH\Views\dictionary\import.php(57): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(203): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,380 @@
+CRITICAL - 2022-11-09 09:49:43 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name8')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:49:47 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name8')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:50:26 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:50:28 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:50:28 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:50:29 --> CodeIgniter\BaseModel::findAll(): Argument #1 ($limit) must be of type int, string given, called in C:\xampp\htdocs\etkal\app\Controllers\Meaning.php on line 27
+in SYSTEMPATH\BaseModel.php on line 567.
+ 1 APPPATH\Controllers\Meaning.php(27): CodeIgniter\BaseModel->findAll('language_id', 'language_name')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 09:56:24 --> Undefined array key "language_id"
+in APPPATH\Views\dictionary\addmeaning.php on line 82.
+ 1 APPPATH\Views\dictionary\addmeaning.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_id"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 11:26:32 --> Undefined variable $languages
+in APPPATH\Views\dictionary\addmeaning.php on line 70.
+ 1 APPPATH\Views\dictionary\addmeaning.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $languages', 'APPPATH\\Views\\dictionary\\addmeaning.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(44): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 12:00:42 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('languageto2', [...], [...], ' class="form-control select2" style="width: 100%;" multiple="multiple"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(65): form_multiselect('languageto2', [...], [...], ' class="form-control select2" style="width: 100%;" multiple="multiple"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(47): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 12:04:39 --> Cannot use [] for reading
+in APPPATH\Views\dictionary\addmeaning.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 12:04:58 --> Undefined variable $language
+in APPPATH\Views\dictionary\addmeaning.php on line 65.
+ 1 APPPATH\Views\dictionary\addmeaning.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $language', 'APPPATH\\Views\\dictionary\\addmeaning.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 12:04:59 --> Undefined variable $language
+in APPPATH\Views\dictionary\addmeaning.php on line 65.
+ 1 APPPATH\Views\dictionary\addmeaning.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $language', 'APPPATH\\Views\\dictionary\\addmeaning.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 12:05:15 --> Cannot use [] for reading
+in APPPATH\Views\dictionary\addmeaning.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 12:06:19 --> Cannot use [] for reading
+in APPPATH\Views\dictionary\addmeaning.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 12:22:22 --> Undefined array key "language_name"
+in APPPATH\Views\dictionary\addmeaning.php on line 97.
+ 1 APPPATH\Views\dictionary\addmeaning.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_name"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(47): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 12:22:46 --> Attempt to read property "language_name" on array
+in APPPATH\Views\dictionary\addmeaning.php on line 97.
+ 1 APPPATH\Views\dictionary\addmeaning.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "language_name" on array', 'APPPATH\\Views\\dictionary\\addmeaning.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(47): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 13:56:27 --> array_push(): Argument #1 ($array) cannot be passed by reference
+in APPPATH\Models\LanguageModel.php on line 50.
+ 1 APPPATH\Controllers\Meaning.php(49): App\Models\LanguageModel->getlanguage()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 13:57:31 --> array_push(): Argument #1 ($array) cannot be passed by reference
+in APPPATH\Models\LanguageModel.php on line 50.
+ 1 APPPATH\Controllers\Meaning.php(49): App\Models\LanguageModel->getlanguage()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 13:59:18 --> Array to string conversion
+in APPPATH\Models\LanguageModel.php on line 52.
+ 1 APPPATH\Models\LanguageModel.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Models\\LanguageModel.php', 52)
+ 2 APPPATH\Controllers\Meaning.php(49): App\Models\LanguageModel->getlanguage()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 14:01:36 --> Array to string conversion
+in APPPATH\Models\LanguageModel.php on line 54.
+ 1 APPPATH\Models\LanguageModel.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Models\\LanguageModel.php', 54)
+ 2 APPPATH\Controllers\Meaning.php(28): App\Models\LanguageModel->getlanguage()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 14:04:17 --> Undefined array key "language_id"
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_id"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 14:04:19 --> Undefined array key "language_id"
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_id"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 14:05:50 --> Undefined array key "language_id"
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_id"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 14:06:11 --> Undefined array key "language_id"
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_id"', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(29): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 16:59:21 --> Undefined variable $error
+in APPPATH\Views\default.php on line 28.
+ 1 APPPATH\Views\default.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\default.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 6 APPPATH\Controllers\Meaning.php(28): view('dictionary/addmeaning', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 17:24:32 --> array_push(): Argument #1 ($array) must be of type array, int given
+in APPPATH\Models\LanguageModel.php on line 51.
+ 1 APPPATH\Models\LanguageModel.php(51): array_push(1, [...])
+ 2 APPPATH\Controllers\Meaning.php(27): App\Models\LanguageModel->getlanguage()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 17:28:46 --> Undefined array key "language_name"
+in APPPATH\Controllers\Meaning.php on line 28.
+ 1 APPPATH\Controllers\Meaning.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "language_name"', 'APPPATH\\Controllers\\Meaning.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 17:29:04 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 28.
+ 1 APPPATH\Controllers\Meaning.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 17:29:05 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 28.
+ 1 APPPATH\Controllers\Meaning.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 17:55:57 --> syntax error, unexpected token ";", expecting "="
+in APPPATH\Controllers\Meaning.php on line 28.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Meaning.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Meaning')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Meaning')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Meaning', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:05:13 --> syntax error, unexpected token ")", expecting "="
+in APPPATH\Controllers\Meaning.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Meaning.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Meaning')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Meaning')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Meaning', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:05:14 --> syntax error, unexpected token ")", expecting "="
+in APPPATH\Controllers\Meaning.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Meaning.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Meaning')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Meaning')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Meaning', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:11:48 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 44.
+ 1 APPPATH\Controllers\Meaning.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:12:49 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 44.
+ 1 APPPATH\Controllers\Meaning.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:12:50 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 44.
+ 1 APPPATH\Controllers\Meaning.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:17:23 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 44.
+ 1 APPPATH\Controllers\Meaning.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:18:04 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|in_list[implode(', '|', 26)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(60): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:18:05 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 807.
+ 1 SYSTEMPATH\Validation\Validation.php(807): strpos('required|in_list[implode(', '|', 26)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(60): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 18:41:16 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\dictionary\addmeaning.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 18:43:40 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\dictionary\addmeaning.php on line 94.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 18:43:41 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Views\dictionary\addmeaning.php on line 94.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-09 19:18:38 --> array_merge(): Argument #2 must be of type array, bool given
+in APPPATH\Controllers\Meaning.php on line 71.
+ 1 APPPATH\Controllers\Meaning.php(71): array_merge([...], true, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 19:59:51 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 302.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 302)
+ 2 SYSTEMPATH\Validation\Validation.php(302): trim(null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('user_report', 'user_report', null, [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Meaning.php(67): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:00:20 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 302.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 302)
+ 2 SYSTEMPATH\Validation\Validation.php(302): trim(null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('user_report', 'user_report', null, [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Meaning.php(67): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:00:31 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 302.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 302)
+ 2 SYSTEMPATH\Validation\Validation.php(302): trim(null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('user_report', 'user_report', null, [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Meaning.php(67): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-09 20:00:41 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 302.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 302)
+ 2 SYSTEMPATH\Validation\Validation.php(302): trim(null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('user_report', 'user_report', null, [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Meaning.php(67): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,149 @@
+CRITICAL - 2023-03-08 14:00:42 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(135): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:00:50 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(135): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:00:57 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(135): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:01:17 --> fputcsv(): Argument #2 ($fields) must be of type array, mysqli given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(mysqli))
+ 2 APPPATH\Controllers\Dictionary.php(135): App\Libraries\Functions->exportData(Object(CodeIgniter\Database\MySQLi\Result), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:07:35 --> Undefined array key "row_num"
+in APPPATH\Controllers\Dictionary.php on line 99.
+ 1 APPPATH\Controllers\Dictionary.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "row_num"', 'APPPATH\\Controllers\\Dictionary.php', 99)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:09:16 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(136): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:09:23 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(136): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:09:29 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 259.
+ 1 APPPATH\Libraries\Functions.php(259): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Dictionary.php(136): App\Libraries\Functions->exportData(Object(App\Models\DictionaryModel), [...], 'dictionarypages')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:26:15 --> Call to a member function only() on string
+in APPPATH\Views\search\search.php on line 89.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(65): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:27:38 --> Call to a member function only() on string
+in APPPATH\Views\search\search.php on line 89.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(65): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:28:18 --> Call to a member function Links() on string
+in APPPATH\Views\search\search.php on line 89.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(65): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 14:28:43 --> Call to a member function only() on string
+in APPPATH\Views\search\search.php on line 198.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(65): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 16:36:38 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Views\search\search.php on line 89.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:12:20 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1460.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->limit('100, 1')
+ 2 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('limit', [...])
+ 3 APPPATH\Controllers\Search.php(53): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where', 'null', '100, 1')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:12:51 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1460.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->limit('100, 1')
+ 2 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('limit', [...])
+ 3 APPPATH\Controllers\Search.php(53): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where', 'null', '100, 1')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:12:53 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1460.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->limit('100, 1')
+ 2 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('limit', [...])
+ 3 APPPATH\Controllers\Search.php(53): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where', 'null', '100, 1')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 17:12:54 --> CodeIgniter\Database\BaseBuilder::limit(): Argument #1 ($value) must be of type ?int, string given, called in C:\xampp\htdocs\etkal\system\Model.php on line 772
+in SYSTEMPATH\Database\BaseBuilder.php on line 1460.
+ 1 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->limit('100, 1')
+ 2 APPPATH\Models\WordMeaningModel.php(119): CodeIgniter\Model->__call('limit', [...])
+ 3 APPPATH\Controllers\Search.php(53): App\Models\WordMeaningModel->getgroupMeanig([...], [...], 'w.word', 'RANDOM', 'where', 'null', '100, 1')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

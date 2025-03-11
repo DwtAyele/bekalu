@@ -1,0 +1,18 @@
+CRITICAL - 2022-12-26 01:07:31 --> Attempt to read property "word_meaning_id" on bool
+in APPPATH\Models\WordMeaningModel.php on line 86.
+ 1 APPPATH\Models\WordMeaningModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word_meaning_id" on bool', 'APPPATH\\Models\\WordMeaningModel.php', 86)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1672045651_11e1a887ba299da83713.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 01:07:34 --> Attempt to read property "word_meaning_id" on bool
+in APPPATH\Models\WordMeaningModel.php on line 86.
+ 1 APPPATH\Models\WordMeaningModel.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word_meaning_id" on bool', 'APPPATH\\Models\\WordMeaningModel.php', 86)
+ 2 APPPATH\Controllers\Meaning.php(193): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+ 3 APPPATH\Controllers\Meaning.php(154): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1672045654_444d6d43f17ce11c0ce4.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

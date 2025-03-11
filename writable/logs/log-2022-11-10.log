@@ -1,0 +1,11 @@
+CRITICAL - 2022-11-10 12:18:31 --> Undefined variable $show_selected
+in APPPATH\Views\dictionary\addmeaning.php on line 78.
+ 1 APPPATH\Views\dictionary\addmeaning.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $show_selected', 'APPPATH\\Views\\dictionary\\addmeaning.php', 78)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(75): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

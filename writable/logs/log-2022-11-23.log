@@ -1,0 +1,423 @@
+CRITICAL - 2022-11-23 09:33:53 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:36:18 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Search.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:36:19 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Search.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:47:21 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Views\search\search.php on line 85.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:48:50 --> Call to undefined method CodeIgniter\Pager\Pager::hasPrevious()
+in APPPATH\Views\search\search.php on line 89.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:51:36 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Views\search\search.php on line 85.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:51:37 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Views\search\search.php on line 85.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 09:51:38 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Views\search\search.php on line 85.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:07:16 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 114.
+ 1 APPPATH\Views\search\search.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:10:45 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 114.
+ 1 APPPATH\Views\search\search.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:16:24 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 114.
+ 1 APPPATH\Views\search\search.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:42:32 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 114.
+ 1 APPPATH\Views\search\search.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 10:54:57 --> Cannot use object of type CodeIgniter\HTTP\URI as array
+in APPPATH\Views\search\search.php on line 118.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:27:25 --> Cannot use object of type CodeIgniter\HTTP\URI as array
+in APPPATH\Views\search\search.php on line 118.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:28:55 --> Cannot use object of type CodeIgniter\HTTP\URI as array
+in APPPATH\Views\search\search.php on line 118.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:32:21 --> bootstrap is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\search\search.php(114): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 7 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:38:35 --> syntax error, unexpected token ";"
+in APPPATH\Views\search\search.php on line 119.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 3 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:39:59 --> bootstrap is not a valid Pager template.
+in SYSTEMPATH\Pager\Pager.php on line 120.
+ 1 SYSTEMPATH\Pager\Pager.php(120): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap')
+ 2 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\search\search.php(114): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 7 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:56:15 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:57:31 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:57:31 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:57:32 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:57:32 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:58:01 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:58:02 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 13:58:02 --> Cannot access offset of type string on string
+in APPPATH\Views\search\search.php on line 120.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 14:10:06 --> Call to a member function getDetails() on null
+in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 14:13:00 --> Call to a member function getPageURI() on null
+in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 14:13:01 --> Call to a member function getPageURI() on null
+in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 14:17:55 --> Call to a member function setSegment() on null
+in APPPATH\Controllers\Search.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 14:23:03 --> Call to undefined method App\Models\WordMeaningModel::getDetails
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(32): CodeIgniter\Model->__call('getDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:23:56 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Views\search\search.php on line 126.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:24:44 --> Call to undefined method App\Models\WordMeaningModel::setSurroundCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(32): CodeIgniter\Model->__call('setSurroundCount', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:25:05 --> Call to undefined method App\Models\WordMeaningModel::setSurroundCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(32): CodeIgniter\Model->__call('setSurroundCount', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:25:06 --> Call to undefined method App\Models\WordMeaningModel::setSurroundCount
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Search.php(32): CodeIgniter\Model->__call('setSurroundCount', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:26:48 --> Call to undefined method CodeIgniter\Pager\Pager::setSurroundCount()
+in APPPATH\Controllers\Search.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:37:06 --> Call to undefined method CodeIgniter\Pager\Pager::hasPrevious()
+in APPPATH\Views\search\search.php on line 130.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:38:53 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 143.
+ 1 APPPATH\Views\search\search.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:42:16 --> Cannot use object of type CodeIgniter\HTTP\URI as array
+in APPPATH\Views\search\search.php on line 144.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 4 APPPATH\Controllers\Search.php(34): view('search/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 16:56:59 --> explode(): Argument #1 ($separator) cannot be empty
+in APPPATH\Controllers\Search.php on line 32.
+ 1 APPPATH\Controllers\Search.php(32): explode('C:\\xampp\\htdocs\\etkal', '
+<nav aria-label="Page navigation">
+	<ul class="pagination">
+		
+					<li class="active">
+				<a href="http://localhost/etkal/kalat?page=1">
+					1				</a>
+			</li>
+					<li >
+				<a href="http://localhost/etkal/kalat?page=2">
+					2				</a>
+			</li>
+					<li >
+				<a href="http://localhost/etkal/kalat?page=3">
+					3				</a>
+			</li>
+		
+			</ul>
+</nav>
+')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 17:32:00 --> Undefined variable $item
+in APPPATH\Views\search\search.php on line 43.
+ 1 APPPATH\Views\search\search.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\search\\search.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(35): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 18:07:53 --> You must supply the parameters: fields, data.
+in SYSTEMPATH\Validation\Rules.php on line 246.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->required_with('pass', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('retypepassword', 'retypepassword', 'pass', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Users.php(185): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->recoverpassword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 18:52:27 --> You must supply the parameters: fields, data.
+in SYSTEMPATH\Validation\Rules.php on line 246.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->required_with('pass', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('retypepassword', 'retypepassword', 'pass', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Users.php(185): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->recoverpassword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-23 18:53:13 --> You must supply the parameters: fields, data.
+in SYSTEMPATH\Validation\Rules.php on line 246.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->required_with('pass', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('retypepassword', 'retypepassword', 'pass', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Users.php(185): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->recoverpassword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

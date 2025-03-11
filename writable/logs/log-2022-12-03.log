@@ -1,0 +1,136 @@
+ERROR - 2022-12-03 06:51:05 --> mysqli_sql_exception: Table 'kal.meaning' doesn't exist in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(30): CodeIgniter\BaseModel->paginate(8)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-03 06:51:05 --> Table 'kal.meaning' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, sum(us.suggestion = 1) as LIKES, sum(us.suggestion = 2) as DISLIKES, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meaning` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+GROUP BY `w`.`word`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, sum(us.suggestion = 1) as LIKES, sum(us.suggestion = 2) as DISLIKES, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meaning` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+GROUP BY `w`.`word`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, sum(us.suggestion = 1) as LIKES, sum(us.suggestion = 2) as DISLIKES, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meaning` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+GROUP BY `w`.`word`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`created_at`, `u`.`firstname`, `u`.`lastname`, `u`.`email`, `u`.`image`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, sum(us.suggestion = 1) as LIKES, sum(us.suggestion = 2) as DISLIKES, sum(us.suggestion = 3) as FLAGE, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meaning` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `user_suggestions` AS `us` ON `word_meaning`.`word_meaning_id` = `us`.`word_meaning_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+GROUP BY `w`.`word`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(30): CodeIgniter\BaseModel->paginate(8)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 07:26:32 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\etkal\app\Models\MeaningsModel.php on line 88
+in SYSTEMPATH\Model.php on line 653.
+ 1 APPPATH\Models\MeaningsModel.php(88): CodeIgniter\Model->insert('meanings', [...])
+ 2 APPPATH\Controllers\Meaning.php(126): App\Models\MeaningsModel->insert_meanings([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-03 08:00:47 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in C:\xampp\htdocs\etkal\app\Models\MeaningsModel.php on line 88
+in SYSTEMPATH\Model.php on line 653.
+ 1 APPPATH\Models\MeaningsModel.php(88): CodeIgniter\Model->insert('meanings', [...])
+ 2 APPPATH\Controllers\Meaning.php(125): App\Models\MeaningsModel->insert_meanings([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-03 21:12:45 --> mysqli_sql_exception: Table 'kal.partsofspeechs' doesn't exist in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('2', 'part_of_speech_...', Array, NULL)
+#6 C:\xampp\htdocs\etkal\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('part_of_speech_...', 'part_of_speech_...', '2', Array, Array)
+#7 C:\xampp\htdocs\etkal\system\BaseModel.php(1350): CodeIgniter\Validation\Validation->run(Array, NULL, NULL)
+#8 C:\xampp\htdocs\etkal\system\BaseModel.php(707): CodeIgniter\BaseModel->validate(Array)
+#9 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#10 C:\xampp\htdocs\etkal\app\Models\MeaningsModel.php(88): CodeIgniter\Model->insert(Array)
+#11 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(125): App\Models\MeaningsModel->insert_meanings(Array)
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+#13 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#14 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#16 {main}
+CRITICAL - 2022-12-03 21:12:45 --> Table 'kal.partsofspeechs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `PartsofSpeechs`
+WHERE `part_of_speech_id` = \'2\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `PartsofSpeechs`
+WHERE `part_of_speech_id` = \'2\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `PartsofSpeechs`
+WHERE `part_of_speech_id` = \'2\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `PartsofSpeechs`
+WHERE `part_of_speech_id` = :part_of_speech_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(104): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_not_unique('2', 'part_of_speech_id', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('part_of_speech_id', 'part_of_speech_id', '2', [...], [...])
+ 8 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 9 SYSTEMPATH\BaseModel.php(707): CodeIgniter\BaseModel->validate([...])
+10 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+11 APPPATH\Models\MeaningsModel.php(88): CodeIgniter\Model->insert([...])
+12 APPPATH\Controllers\Meaning.php(125): App\Models\MeaningsModel->insert_meanings([...])
+13 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+14 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+15 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

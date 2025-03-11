@@ -1,0 +1,349 @@
+CRITICAL - 2022-11-12 16:34:44 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:37:47 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:37:51 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:37:52 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:37:57 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:38:00 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:38:05 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:38:12 --> Undefined variable $error
+in APPPATH\Views\dictionary\addmeaning.php on line 14.
+ 1 APPPATH\Views\dictionary\addmeaning.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $error', 'APPPATH\\Views\\dictionary\\addmeaning.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:39:47 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:43:05 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Meaning.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:46:29 --> form_multiselect(): Argument #3 ($selected) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags', [...], '2', 'class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(80): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:47:07 --> set_value(): Argument #1 ($field) must be of type string, array given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 552.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): set_value([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(80): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:49:12 --> form_multiselect(): Argument #3 ($selected) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags', [...], 'የሳይንስ', 'class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(80): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:50:04 --> form_multiselect(): Argument #3 ($selected) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags', [...], 'የሳይንስ', 'class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(80): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:51:55 --> syntax error, unexpected token ",", expecting "]"
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 3 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 16:52:17 --> form_multiselect(): Argument #3 ($selected) must be of type array, string given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags', [...], '2', 'class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:00:02 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:01:34 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:02:33 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:02:54 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:06:27 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:11:53 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:12:37 --> Undefined property: CodeIgniter\HTTP\IncomingRequest::$getPost
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getPost', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:13:20 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:20:57 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:24:48 --> Array to string conversion
+in APPPATH\Controllers\Meaning.php on line 72.
+ 1 APPPATH\Controllers\Meaning.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Meaning.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:30:14 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:31:23 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:31:40 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:36:01 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:38:17 --> form_multiselect(): Argument #3 ($selected) must be of type array, null given, called in C:\xampp\htdocs\etkal\app\Views\dictionary\addmeaning.php on line 85
+in SYSTEMPATH\Helpers\form_helper.php on line 244.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], null, 'class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(81): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:39:58 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 301.
+ 1 SYSTEMPATH\Helpers\form_helper.php(301): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 301)
+ 2 SYSTEMPATH\Helpers\form_helper.php(252): form_dropdown('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 3 APPPATH\Views\dictionary\addmeaning.php(85): form_multiselect('tags[]', [...], [...], ' class="js-example-basic-multiple" name="states[]" multiple="multiple" data-placeholder="Select more" style="width: 100%"')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 7 APPPATH\Controllers\Meaning.php(80): view('dictionary/addmeaning', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 17:58:36 --> array_merge(): Argument #2 must be of type array, bool given
+in APPPATH\Controllers\Meaning.php on line 81.
+ 1 APPPATH\Controllers\Meaning.php(81): array_merge([...], true, [...], [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 18:02:58 --> ksort(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 80.
+ 1 APPPATH\Controllers\Meaning.php(80): ksort(null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 18:06:44 --> Undefined variable $tags_select
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags_select', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(79): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-12 18:07:33 --> Undefined variable $tags_select
+in APPPATH\Views\dictionary\addmeaning.php on line 85.
+ 1 APPPATH\Views\dictionary\addmeaning.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tags_select', 'APPPATH\\Views\\dictionary\\addmeaning.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\addmeaning.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/addmeaning', [], true)
+ 5 APPPATH\Controllers\Meaning.php(33): view('dictionary/addmeaning', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

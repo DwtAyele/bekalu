@@ -1,0 +1,297 @@
+ERROR - 2022-10-18 10:36:15 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-10-18 10:36:15 --> 220 smtp.gmail.com ESMTP g63-20020a625242000000b00561c6a4c1b0sm5121311pfb.176 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [199.255.44.250]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 534-5.7.9 Application-specific password required. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor g63-20020a625242000000b00561c6a4c1b0sm5121311pfb.176 - gsmtp
+
+CRITICAL - 2022-10-18 19:08:43 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:09:11 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:09:12 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:09:18 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:09:29 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:11:24 --> Undefined array key "last_login"
+in APPPATH\Controllers\User.php on line 214.
+ 1 APPPATH\Controllers\User.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "last_login"', 'APPPATH\\Controllers\\User.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:14:23 --> Attempt to read property "last_login" on array
+in APPPATH\Controllers\User.php on line 214.
+ 1 APPPATH\Controllers\User.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "last_login" on array', 'APPPATH\\Controllers\\User.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:14:24 --> Attempt to read property "last_login" on array
+in APPPATH\Controllers\User.php on line 214.
+ 1 APPPATH\Controllers\User.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "last_login" on array', 'APPPATH\\Controllers\\User.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:15:27 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:15:28 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:15:29 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:16:19 --> Undefined variable $puserdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $puserdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(216): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:18:18 --> Array to string conversion
+in APPPATH\Controllers\User.php on line 214.
+ 1 APPPATH\Controllers\User.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\User.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:20:32 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(217): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:33:11 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(217): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:34:22 --> syntax error, unexpected token ";"
+in APPPATH\Views\users\profile.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 3 APPPATH\Controllers\User.php(217): view('users/profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:34:24 --> syntax error, unexpected token ";"
+in APPPATH\Views\users\profile.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 3 APPPATH\Controllers\User.php(217): view('users/profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:34:26 --> syntax error, unexpected token ";"
+in APPPATH\Views\users\profile.php on line 40.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 3 APPPATH\Controllers\User.php(217): view('users/profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:35:58 --> Undefined variable $last_login
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $last_login', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:39:08 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:39:09 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:39:25 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:39:26 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:39:27 --> Undefined variable $userdata
+in APPPATH\Views\users\profile.php on line 40.
+ 1 APPPATH\Views\users\profile.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userdata', 'APPPATH\\Views\\users\\profile.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\users\\profile.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+ 5 APPPATH\Controllers\User.php(218): view('users/profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:40:22 --> Undefined array key "last_login"
+in APPPATH\Controllers\User.php on line 215.
+ 1 APPPATH\Controllers\User.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "last_login"', 'APPPATH\\Controllers\\User.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:41:59 --> Call to undefined method App\Models\UserModel::getRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\User.php(213): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:42:43 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\User.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:43:08 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$last_login
+in APPPATH\Controllers\User.php on line 215.
+ 1 APPPATH\Controllers\User.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$last_login', 'APPPATH\\Controllers\\User.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:43:46 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\User.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-18 19:44:32 --> Attempt to read property "last_login" on array
+in APPPATH\Controllers\User.php on line 215.
+ 1 APPPATH\Controllers\User.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "last_login" on array', 'APPPATH\\Controllers\\User.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->profile()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,49 @@
+CRITICAL - 2023-02-17 14:17:15 --> Trying to access array offset on value of type null
+in APPPATH\Models\WordsModel.php on line 106.
+ 1 APPPATH\Models\WordsModel.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\WordsModel.php', 106)
+ 2 APPPATH\Controllers\Meaning.php(206): App\Models\WordsModel->set_insert_word([...])
+ 3 APPPATH\Controllers\Meaning.php(164): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676672228_f0859fd681bac9ded842.csv', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 21:53:40 --> Class "Time" not found
+in APPPATH\Views\search\search2.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 21:55:37 --> Class "Time" not found
+in APPPATH\Views\search\search2.php on line 46.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 21:57:06 --> Call to a member function humanize() on string
+in APPPATH\Views\search\search2.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 21:57:08 --> Call to a member function humanize() on string
+in APPPATH\Views\search\search2.php on line 47.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search2', [], true)
+ 4 APPPATH\Controllers\Search.php(66): view('search/search2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

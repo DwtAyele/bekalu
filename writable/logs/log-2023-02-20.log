@@ -1,0 +1,728 @@
+ERROR - 2023-02-20 13:14:17 --> mysqli_sql_exception: Unknown column 'u.email' in 'where clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(81): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(64): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-20 13:14:17 --> Unknown column 'u.email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = :w.word:
+AND `u`.`email` = :u.email:
+AND `d`.`flag` <= :d.flag:
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Search.php(81): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 13:14:43 --> mysqli_sql_exception: Unknown column 'u.email' in 'where clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Search.php(81): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(64): App\Controllers\Search->find_word(Array)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->searchword()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-20 13:14:43 --> Unknown column 'u.email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = \'ሰረዝ\'
+AND `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `d`.`flag` <= 10
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `w`.`word` = :w.word:
+AND `u`.`email` = :u.email:
+AND `d`.`flag` <= :d.flag:
+GROUP BY `word_meaning`.`word_meaning_id`
+ORDER BY RAND()', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Search.php(81): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Search.php(64): App\Controllers\Search->find_word([...])
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-20 14:07:44 --> Undefined array key 1
+in APPPATH\Controllers\Meaning.php on line 192.
+ 1 APPPATH\Controllers\Meaning.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Meaning.php', 192)
+ 2 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676930864_67129abaf000f1f508ba.csv', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-20 14:09:11 --> Undefined array key 1
+in APPPATH\Controllers\Meaning.php on line 192.
+ 1 APPPATH\Controllers\Meaning.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Meaning.php', 192)
+ 2 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676930950_78e6ce401c85455e5371.csv', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-20 14:09:32 --> Undefined array key 1
+in APPPATH\Controllers\Meaning.php on line 192.
+ 1 APPPATH\Controllers\Meaning.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\Meaning.php', 192)
+ 2 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676930972_f7b01492238f136b467d.csv', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:05:22 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(173): App\Models\WordsModel->getword('7461')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('7461', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('7461')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:05:22 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'7461\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'7461\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'7461\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(173): App\Models\WordsModel->getword('7461')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('7461', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('7461')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:16:40 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(174): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:16:40 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(174): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:20:37 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:20:37 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:20:39 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:20:39 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:20:40 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:20:40 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:20:42 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:20:42 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 16:24:36 --> mysqli_sql_exception: Unknown column 'wm.comment_page_no' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\app\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-20 16:24:36 --> Unknown column 'wm.comment_page_no' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`language_id` AS `languageto_id`, `m`.`flag` AS `mflag`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `wm`.`user_report`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(86): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\EditMeaning.php(176): App\Models\WordsModel->getword('1')
+ 8 APPPATH\Controllers\EditMeaning.php(34): App\Controllers\EditMeaning->edit_page('1', false)
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->edit('1')
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-20 19:35:40 --> Undefined variable $dictionary
+in APPPATH\Views\dictionary\diclist.php on line 28.
+ 1 APPPATH\Views\dictionary\diclist.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dictionary', 'APPPATH\\Views\\dictionary\\diclist.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(26): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-20 21:08:01 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 154.
+ 1 APPPATH\Controllers\Meaning.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 154)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 21:32:24 --> mysqli_sql_exception: Duplicate entry '8199-10485-1-2' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(88): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-20 21:32:24 --> Duplicate entry '8199-10485-1-2' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:32:24\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:32:24\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:32:24\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (:dictionary_id:, :user_id:, :word_id:, :meaning_id:, :page_no:, :comment:, :flag:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordMeaningModel.php(88): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676957544_5162e499377af96c59c5.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 21:33:20 --> mysqli_sql_exception: Duplicate entry '8199-10485-1-2' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(88): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-20 21:33:20 --> Duplicate entry '8199-10485-1-2' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:33:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:33:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:33:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (:dictionary_id:, :user_id:, :word_id:, :meaning_id:, :page_no:, :comment:, :flag:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordMeaningModel.php(88): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676957600_8faaddd10160b85cbdde.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 21:39:25 --> mysqli_sql_exception: Duplicate entry '8199-10485-1-2' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-20 21:39:25 --> Duplicate entry '8199-10485-1-2' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:25\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:25\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:25\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (:dictionary_id:, :user_id:, :word_id:, :meaning_id:, :page_no:, :comment:, :flag:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676957965_fc12006bd28d078871ff.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 21:39:30 --> mysqli_sql_exception: Duplicate entry '8199-10485-1-2' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-20 21:39:30 --> Duplicate entry '8199-10485-1-2' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:39:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (:dictionary_id:, :user_id:, :word_id:, :meaning_id:, :page_no:, :comment:, :flag:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676957970_e81de5ec8ba37f874f98.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-20 21:46:13 --> mysqli_sql_exception: Duplicate entry '8199-10485-1-2' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `wo...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `wo...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `wo...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `wo...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-20 21:46:13 --> Duplicate entry '8199-10485-1-2' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:46:13\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:46:13\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (\'2\', \'1\', \'8199\', \'10485\', \'1624\', \'  ምስል => \', 5, \'2023-02-20 21:46:13\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `word_meaning` (`dictionary_id`, `user_id`, `word_id`, `meaning_id`, `page_no`, `comment`, `flag`, `created_at`) VALUES (:dictionary_id:, :user_id:, :word_id:, :meaning_id:, :page_no:, :comment:, :flag:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\WordMeaningModel.php(89): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1676958373_0803e117cd5868277d6a.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

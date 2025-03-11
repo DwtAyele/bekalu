@@ -1,0 +1,66 @@
+CRITICAL - 2023-08-15 12:23:53 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:25:31 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:25:32 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:25:33 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:27:02 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 62.
+ 1 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:27:03 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 62.
+ 1 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:27:59 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 62.
+ 1 APPPATH\Libraries\Functions.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 62)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:28:02 --> Undefined array key "mezegebe_kalat_user_email"
+in APPPATH\Libraries\Functions.php on line 62.
+ 1 APPPATH\Libraries\Functions.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "mezegebe_kalat_user_email"', 'APPPATH\\Libraries\\Functions.php', 62)
+ 2 APPPATH\Controllers\Users.php(20): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-15 12:28:50 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 111.
+ 1 APPPATH\Libraries\Functions.php(68): App\Libraries\Functions::userrole()
+ 2 APPPATH\Controllers\Users.php(70): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

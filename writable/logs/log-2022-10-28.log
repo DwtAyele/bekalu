@@ -1,0 +1,712 @@
+CRITICAL - 2022-10-28 09:48:32 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('adminDashbord', [], true)
+10 APPPATH\Controllers\Users.php(76): view('adminDashbord', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 09:49:06 --> Cannot use object of type mysqli as array
+in APPPATH\Views\partials\sidebar.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 4 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 8 APPPATH\Libraries\Functions.php(17): view('default', [...])
+ 9 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+10 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+11 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 09:49:08 --> Cannot use object of type mysqli as array
+in APPPATH\Views\partials\sidebar.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 4 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 8 APPPATH\Libraries\Functions.php(17): view('default', [...])
+ 9 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+10 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+11 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 09:52:14 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('adminDashbord', [], true)
+10 APPPATH\Controllers\Users.php(76): view('adminDashbord', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 09:56:50 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+10 APPPATH\Controllers\Users.php(254): view('users/profile', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:18 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:19 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:22 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:23 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:24 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:35 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+10 APPPATH\Controllers\Users.php(254): view('users/profile', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:00:39 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('adminDashbord', [], true)
+10 APPPATH\Controllers\Users.php(60): view('adminDashbord', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:02:18 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:02:20 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:02:22 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:02:39 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:03:35 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:03:36 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:04:12 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:04:13 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:04:14 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:04:16 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:06:44 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:06:45 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:06:45 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:06:46 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:06:53 --> Undefined variable $sidebar
+in APPPATH\Views\partials\sidebar.php on line 39.
+ 1 APPPATH\Views\partials\sidebar.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sidebar', 'APPPATH\\Views\\partials\\sidebar.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('default', [], true)
+ 9 APPPATH\Libraries\Functions.php(17): view('default', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:16:02 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Libraries\Functions.php on line 63.
+ 1 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 2 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 3 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:16:34 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$category
+in APPPATH\Libraries\Functions.php on line 63.
+ 1 APPPATH\Libraries\Functions.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$category', 'APPPATH\\Libraries\\Functions.php', 63)
+ 2 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 3 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 4 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:16:35 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$category
+in APPPATH\Libraries\Functions.php on line 63.
+ 1 APPPATH\Libraries\Functions.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$category', 'APPPATH\\Libraries\\Functions.php', 63)
+ 2 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 3 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 4 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:16:35 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$category
+in APPPATH\Libraries\Functions.php on line 63.
+ 1 APPPATH\Libraries\Functions.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$category', 'APPPATH\\Libraries\\Functions.php', 63)
+ 2 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 3 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 4 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:17:15 --> Object of type CodeIgniter\Database\MySQLi\Result is not callable
+in APPPATH\Libraries\Functions.php on line 63.
+ 1 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 2 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 3 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:18:46 --> Undefined array key "category"
+in APPPATH\Libraries\Functions.php on line 64.
+ 1 APPPATH\Libraries\Functions.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'APPPATH\\Libraries\\Functions.php', 64)
+ 2 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 3 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 4 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 10:29:14 --> Undefined array key "category"
+in APPPATH\Libraries\Functions.php on line 64.
+ 1 APPPATH\Libraries\Functions.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category"', 'APPPATH\\Libraries\\Functions.php', 64)
+ 2 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 3 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 4 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 12:14:58 --> mysqli_sql_exception: Unknown column 'p.category' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ur`.`us...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ur`.`us...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ur`.`us...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ur`.`us...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Home.php(16): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-28 12:14:58 --> Unknown column 'p.category' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ur`.`user_id`, `p`.`page`, `p`.`category`, `p`.`hasSubfolder`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ur`.`user_id`, `p`.`page`, `p`.`category`, `p`.`hasSubfolder`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ur`.`user_id`, `p`.`page`, `p`.`category`, `p`.`hasSubfolder`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ur`.`user_id`, `p`.`page`, `p`.`category`, `p`.`hasSubfolder`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = :u.email:', [...], false)
+ 5 APPPATH\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 8 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 12:15:37 --> mysqli_sql_exception: Unknown column 'pc.page_category_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Home.php(16): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-28 12:15:37 --> Unknown column 'pc.page_category_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = :u.email:', [...], false)
+ 5 APPPATH\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 8 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-28 12:15:38 --> mysqli_sql_exception: Unknown column 'pc.page_category_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Home.php(16): App\Controllers\Users->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-10-28 12:15:38 --> Unknown column 'pc.page_category_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`prefix_html`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_sefix`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = :u.email:', [...], false)
+ 5 APPPATH\Libraries\Functions.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(17): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+ 8 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 14:06:25 --> Cannot access offset of type string on string
+in APPPATH\Views\partials\sidebar.php on line 33.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 4 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('default', [], true)
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('adminDashbord', [], true)
+ 9 APPPATH\Libraries\Functions.php(18): view('adminDashbord', [...])
+10 APPPATH\Controllers\Users.php(23): App\Libraries\Functions::check_login()
+11 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+12 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+13 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-28 14:20:20 --> Undefined array key "category_id"
+in APPPATH\Views\partials\sidebar.php on line 41.
+ 1 APPPATH\Views\partials\sidebar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'APPPATH\\Views\\partials\\sidebar.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+10 APPPATH\Controllers\Users.php(256): view('users/profile', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

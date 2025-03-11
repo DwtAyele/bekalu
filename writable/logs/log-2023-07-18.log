@@ -1,0 +1,365 @@
+CRITICAL - 2023-07-18 14:03:29 --> Class "CodeIgniter\Session\Handlers\DatabaseHandler\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('CodeIgniter\\Session\\Handlers\\DatabaseHandler', 'CodeIgniter\\Session\\Handlers\\DatabaseHandler\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:03:55 --> Class "CodeIgniter\Session\Handlers\DatabaseHandler\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('CodeIgniter\\Session\\Handlers\\DatabaseHandler', 'CodeIgniter\\Session\\Handlers\\DatabaseHandler\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:03:56 --> Class "CodeIgniter\Session\Handlers\DatabaseHandler\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('CodeIgniter\\Session\\Handlers\\DatabaseHandler', 'CodeIgniter\\Session\\Handlers\\DatabaseHandler\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:03:57 --> Class "CodeIgniter\Session\Handlers\DatabaseHandler\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('CodeIgniter\\Session\\Handlers\\DatabaseHandler', 'CodeIgniter\\Session\\Handlers\\DatabaseHandler\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:04:30 --> Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('MySQL', 'CodeIgniter\\Database\\MySQL\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:04:30 --> Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('MySQL', 'CodeIgniter\\Database\\MySQL\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 14:04:43 --> Class "CodeIgniter\Database\MySQL\Connection" not found
+in SYSTEMPATH\Database\Database.php on line 136.
+ 1 SYSTEMPATH\Database\Database.php(56): CodeIgniter\Database\Database->initDriver('MySQL', 'CodeIgniter\\Database\\MySQL\\Connection', [...])
+ 2 SYSTEMPATH\Database\Config.php(78): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH\Config\Services.php(647): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 APPPATH\Controllers\Search.php(15): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Search->__construct()
+10 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:39:56 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(153): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:41:16 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(153): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:43:19 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(153): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:46:06 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(153): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:50:57 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(154): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:57:16 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Meaning.php(155): App\Libraries\Functions->exportData(Object(App\Models\WordMeaningModel), [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 19:57:52 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Meaning.php(155): App\Libraries\Functions->exportData(Object(App\Models\WordMeaningModel), [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-18 20:08:48 --> mysqli_sql_exception: Table 'kal.null' doesn't exist in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('t2g6qqch3sp93ia...')
+#6 C:\xampp\htdocs\etkal\system\Session\Session.php(920): session_start()
+#7 C:\xampp\htdocs\etkal\system\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\etkal\system\Config\Services.php(665): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#10 C:\xampp\htdocs\etkal\system\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\etkal\system\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\etkal\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\etkal\system\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(29): session()
+#15 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Meaning->__construct()
+#16 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#17 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#19 {main}
+CRITICAL - 2023-07-18 20:08:48 --> Table 'kal.null' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`
+FROM `null`
+WHERE `id` = \'t2g6qqch3sp93iagohofrqnf9t8rkob3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `null`
+WHERE `id` = \'t2g6qqch3sp93iagohofrqnf9t8rkob3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `null`
+WHERE `id` = \'t2g6qqch3sp93iagohofrqnf9t8rkob3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `null`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('t2g6qqch3sp93iagohofrqnf9t8rkob3')
+ 7 SYSTEMPATH\Session\Session.php(920): session_start()
+ 8 SYSTEMPATH\Session\Session.php(242): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(665): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+11 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 APPPATH\Controllers\Meaning.php(29): session()
+16 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Meaning->__construct()
+17 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:17:03 --> Only variables should be passed by reference
+in APPPATH\Controllers\Meaning.php on line 134.
+ 1 APPPATH\Controllers\Meaning.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Only variables should be passed by reference', 'APPPATH\\Controllers\\Meaning.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:18:59 --> Attempt to read property "row_num" on array
+in APPPATH\Views\dictionary\wordmeaninglist.php on line 207.
+ 1 APPPATH\Views\dictionary\wordmeaninglist.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "row_num" on array', 'APPPATH\\Views\\dictionary\\wordmeaninglist.php', 207)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 5 APPPATH\Controllers\Meaning.php(157): view('dictionary/wordmeaninglist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:24:24 --> Call to a member function paginate() on array
+in APPPATH\Controllers\Meaning.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:24:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::paginate()
+in APPPATH\Controllers\Meaning.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:25:13 --> fputcsv(): Argument #2 ($fields) must be of type array, CodeIgniter\Pager\Pager given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(CodeIgniter\Pager\Pager))
+ 2 APPPATH\Controllers\Meaning.php(155): App\Libraries\Functions->exportData(Object(App\Models\WordMeaningModel), [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 20:29:33 --> fputcsv(): Argument #2 ($fields) must be of type array, App\Entities\WordMeaning given
+in APPPATH\Libraries\Functions.php on line 257.
+ 1 APPPATH\Libraries\Functions.php(257): fputcsv(resource (stream), Object(App\Entities\WordMeaning))
+ 2 APPPATH\Controllers\Meaning.php(156): App\Libraries\Functions->exportData([...], [...], 'ትርጉሞች')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:15:08 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:15:38 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:15:39 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:15:40 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:16:28 --> Constant expression contains invalid operations
+in APPPATH\Libraries\Functions.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-18 21:16:29 --> Constant expression contains invalid operations
+in APPPATH\Libraries\Functions.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-18 21:16:55 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:16:57 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:16:57 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:17:38 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:17:39 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:19:19 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:19:20 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:19:20 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:19:21 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:19:21 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 21:24:48 --> Constant expression contains invalid operations
+in APPPATH\Libraries\Functions.php on line 15.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-18 22:15:46 --> Access to undeclared static property App\Libraries\Functions::$session
+in APPPATH\Libraries\Functions.php on line 23.
+ 1 APPPATH\Controllers\Home.php(13): App\Libraries\Functions::check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

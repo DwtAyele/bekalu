@@ -1,0 +1,108 @@
+CRITICAL - 2023-03-03 12:40:08 --> Undefined variable $accessibility
+in APPPATH\Views\dictionary\edit.php on line 72.
+ 1 APPPATH\Views\dictionary\edit.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accessibility', 'APPPATH\\Views\\dictionary\\edit.php', 72)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\EditMeaning.php(229): view('dictionary/edit', [...])
+ 6 APPPATH\Controllers\EditMeaning.php(166): App\Controllers\EditMeaning->edit_page('1', '4')
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 12:40:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EditMeaning.php on line 119.
+ 1 APPPATH\Controllers\EditMeaning.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EditMeaning.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 12:40:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EditMeaning.php on line 119.
+ 1 APPPATH\Controllers\EditMeaning.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EditMeaning.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 12:40:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EditMeaning.php on line 119.
+ 1 APPPATH\Controllers\EditMeaning.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EditMeaning.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 12:41:40 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EditMeaning.php on line 119.
+ 1 APPPATH\Controllers\EditMeaning.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EditMeaning.php', 119)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\EditMeaning->update()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EditMeaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 17:03:20 --> Unsupported operand types: string + int
+in APPPATH\Controllers\Search.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 17:03:45 --> Unsupported operand types: string + int
+in APPPATH\Controllers\Search.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 20:07:10 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\search\search.php(58): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 9 APPPATH\Controllers\Search.php(57): view('search/search', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 20:07:47 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\search\search.php(58): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 9 APPPATH\Controllers\Search.php(57): view('search/search', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 20:09:28 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\search\search.php(58): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 9 APPPATH\Controllers\Search.php(56): view('search/search', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-03 20:15:03 --> Undefined variable $id_
+in APPPATH\Views\search\search.php on line 165.
+ 1 APPPATH\Views\search\search.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_', 'APPPATH\\Views\\search\\search.php', 165)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(58): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

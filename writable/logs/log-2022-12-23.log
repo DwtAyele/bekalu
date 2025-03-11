@@ -1,0 +1,720 @@
+CRITICAL - 2022-12-23 11:46:28 --> Undefined array key "user_id"
+in APPPATH\Controllers\Meaning.php on line 302.
+ 1 APPPATH\Controllers\Meaning.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "user_id"', 'APPPATH\\Controllers\\Meaning.php', 302)
+ 2 APPPATH\Controllers\Meaning.php(281): App\Controllers\Meaning->pageload()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 13:50:29 --> mysqli_sql_exception: Unknown column 'p.page_prefix' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(91): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(65): App\Libraries\Functions::userrole()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Home.php(25): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 13:50:29 --> Unknown column 'p.page_prefix' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_view_order`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND `ur`.`expiry_date` >= CURRENT_DATE() OR `ur`.`expiry_date` IS NULL
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_view_order`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND `ur`.`expiry_date` >= CURRENT_DATE() OR `ur`.`expiry_date` IS NULL
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_view_order`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND `ur`.`expiry_date` >= CURRENT_DATE() OR `ur`.`expiry_date` IS NULL
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_prefix`, `p`.`page_view_order`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `ur`.`role_page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = :u.email:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND `ur`.`expiry_date` >= CURRENT_DATE() OR `ur`.`expiry_date` IS NULL
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(91): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(65): App\Libraries\Functions::userrole()
+ 7 APPPATH\Controllers\Home.php(25): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 14:40:49 --> Object of class App\Models\WordMeaningModel could not be converted to string
+in APPPATH\Views\dictionary\edit.php on line 183.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 4 APPPATH\Controllers\Meaning.php(263): view('dictionary/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 14:40:57 --> Object of class App\Models\WordMeaningModel could not be converted to string
+in APPPATH\Views\dictionary\edit.php on line 183.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 4 APPPATH\Controllers\Meaning.php(263): view('dictionary/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 14:42:37 --> Call to undefined method App\Models\WordMeaningModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Meaning.php(260): CodeIgniter\Model->__call('getResultArray', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 14:43:06 --> Array to string conversion
+in APPPATH\Views\dictionary\edit.php on line 183.
+ 1 APPPATH\Views\dictionary\edit.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\edit.php', 183)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\Meaning.php(263): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 15:46:26 --> mysqli_sql_exception: Unknown column 'w.word_id' in 'on clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 15:46:26 --> Unknown column 'w.word_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `w`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `w`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `w`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `w`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 15:47:16 --> mysqli_sql_exception: Unknown column 'w.word_id' in 'order clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 15:47:16 --> Unknown column 'w.word_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 15:47:19 --> mysqli_sql_exception: Unknown column 'w.word_id' in 'order clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 15:47:19 --> Unknown column 'w.word_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 15:47:25 --> mysqli_sql_exception: Unknown column 'w.word_id' in 'order clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 15:47:25 --> Unknown column 'w.word_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-23 15:48:53 --> mysqli_sql_exception: Unknown column 'w.word_id' in 'order clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-23 15:48:53 --> Unknown column 'w.word_id' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by w.word_id ASC) AS row_num, `words`.*, `m`.*, `d`.`full_name`, `d`.`short_name`, `wm`.*
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(255): App\Models\WordsModel->getword('1')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:02:25 --> Attempt to read property "word" on array
+in APPPATH\Controllers\Meaning.php on line 266.
+ 1 APPPATH\Controllers\Meaning.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Controllers\\Meaning.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:03:04 --> Undefined array key "word"
+in APPPATH\Controllers\Meaning.php on line 266.
+ 1 APPPATH\Controllers\Meaning.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Controllers\\Meaning.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:03:05 --> Undefined array key "word"
+in APPPATH\Controllers\Meaning.php on line 266.
+ 1 APPPATH\Controllers\Meaning.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Controllers\\Meaning.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:08:08 --> Undefined array key "word"
+in APPPATH\Controllers\Meaning.php on line 266.
+ 1 APPPATH\Controllers\Meaning.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Controllers\\Meaning.php', 266)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:14:03 --> CodeIgniter\View\Table::_prepArgs(): Argument #1 ($args) must be of type array, stdClass given, called in C:\xampp\htdocs\etkal\system\View\Table.php on line 429
+in SYSTEMPATH\View\Table.php on line 224.
+ 1 SYSTEMPATH\View\Table.php(429): CodeIgniter\View\Table->_prepArgs(Object(stdClass))
+ 2 SYSTEMPATH\View\Table.php(271): CodeIgniter\View\Table->_setFromArray([...])
+ 3 APPPATH\Controllers\Meaning.php(265): CodeIgniter\View\Table->generate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('355')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:17:04 --> CodeIgniter\View\Table::_prepArgs(): Argument #1 ($args) must be of type array, stdClass given, called in C:\xampp\htdocs\etkal\system\View\Table.php on line 429
+in SYSTEMPATH\View\Table.php on line 224.
+ 1 SYSTEMPATH\View\Table.php(429): CodeIgniter\View\Table->_prepArgs(Object(stdClass))
+ 2 SYSTEMPATH\View\Table.php(271): CodeIgniter\View\Table->_setFromArray([...])
+ 3 APPPATH\Controllers\Meaning.php(267): CodeIgniter\View\Table->generate([...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('355')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 16:47:56 --> Attempt to read property "word_id" on array
+in APPPATH\Controllers\Meaning.php on line 267.
+ 1 APPPATH\Controllers\Meaning.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word_id" on array', 'APPPATH\\Controllers\\Meaning.php', 267)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:27:13 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:29:10 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:29:11 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:30:53 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:31:11 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:31:47 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:31:48 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:33:53 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:34:38 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:36:03 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:36:05 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:37:50 --> Controller or its method is not found: Meaning::edit
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit')
+ 2 APPPATH\Controllers\Meaning.php(268): url_to('Meaning::edit', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', 'C:\\xampp\\htdocs\\etkal')
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:51:35 --> Controller or its method is not found: Meaning::edit/$1
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:01 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:02 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:03 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:25 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:26 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:26 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:52:27 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:54:16 --> Router.invalidParameterType
+in SYSTEMPATH\Router\RouteCollection.php on line 1136.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1136): CodeIgniter\Router\Exceptions\RouterException::forInvalidParameterType()
+ 2 SYSTEMPATH\Router\RouteCollection.php(1046): CodeIgniter\Router\RouteCollection->fillRouteParams('edit/1/([0-9]+)', [...])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('App\\Controllers\\Meaning::edit/$1/$2', '1', 'C:\\xampp\\htdocs\\etkal')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('Meaning::edit/$1/$2', '1', 'C:\\xampp\\htdocs\\etkal')
+ 5 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1', 'C:\\xampp\\htdocs\\etkal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 9 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:56:01 --> Controller or its method is not found: Meaning::edit/$1
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:56:14 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-23 20:56:15 --> Controller or its method is not found: Meaning::edit/$1/$2
+in SYSTEMPATH\Helpers\url_helper.php on line 539.
+ 1 SYSTEMPATH\Helpers\url_helper.php(539): CodeIgniter\Router\Exceptions\RouterException::forControllerNotFound('Meaning', 'edit/$1/$2')
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(60): url_to('Meaning::edit/$1/$2', '1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(145): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

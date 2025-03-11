@@ -1,0 +1,757 @@
+ERROR - 2023-02-23 08:09:44 --> mysqli_sql_exception: Window function is not allowed in window specification in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:09:44 --> Window function is not allowed in window specification
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY row_num, `wm`.`page_no`, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `row_num`, `wm`.`page_no`, `m`.`meaning_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY row_num, `wm`.`page_no`, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `row_num`, `wm`.`page_no`, `m`.`meaning_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY row_num, `wm`.`page_no`, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `row_num`, `wm`.`page_no`, `m`.`meaning_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY row_num, `wm`.`page_no`, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `row_num`, `wm`.`page_no`, `m`.`meaning_id`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 08:10:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:10:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 08:10:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:10:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 08:10:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:10:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 08:10:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:10:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 08:10:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 08:10:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no, `m`.`meaning_id`, asc) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no`, `m`.`meaning_id`,  asc', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 10:01:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 DESC, `m`.`meaning_id` DESC' at line 8 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-23 10:01:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0 DESC, `m`.`meaning_id` DESC' at line 8
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no + 0, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no +` 0 DESC, `m`.`meaning_id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over(ORDER BY wm.page_no + 0, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no +` 0 DESC, `m`.`meaning_id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over(ORDER BY wm.page_no + 0, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no +` 0 DESC, `m`.`meaning_id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over(ORDER BY wm.page_no + 0, m.meaning_id) AS row_num, COUNT(DISTINCT(w.word_id)) AS word, COUNT(DISTINCT(m.meaning_id)) AS ትርጉሞች, `wm`.`page_no`, `d`.`short_name`, `d`.`flag`, `d`.`dictionary_id`
+FROM (`dictionary`, `dictionary` as `d`)
+JOIN `word_meaning` AS `wm` ON `d`.`dictionary_id` = `wm`.`dictionary_id`
+JOIN `words` AS `w` ON `wm`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+WHERE `d`.`dictionary_id` = 4
+GROUP BY `wm`.`page_no`
+ORDER BY `wm`.`page_no +` 0 DESC, `m`.`meaning_id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Dictionary.php(71): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:33:58 --> Array to string conversion
+in APPPATH\Views\dictionary\diclist.php on line 55.
+ 1 APPPATH\Views\dictionary\diclist.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\diclist.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:46:35 --> Undefined variable $pager
+in APPPATH\Views\dictionary\diclist.php on line 58.
+ 1 APPPATH\Views\dictionary\diclist.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\dictionary\\diclist.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(49): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:56:49 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:56:55 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:56:57 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:56:58 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:57:00 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:57:01 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:57:02 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:57:03 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 75.
+ 1 APPPATH\Views\dictionary\diclist.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:58:02 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 76.
+ 1 APPPATH\Views\dictionary\diclist.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:58:04 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 76.
+ 1 APPPATH\Views\dictionary\diclist.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 12:58:12 --> Undefined variable $pages
+in APPPATH\Views\dictionary\diclist.php on line 76.
+ 1 APPPATH\Views\dictionary\diclist.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\dictionary\\diclist.php', 76)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 13:32:50 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 13:32:50 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677187970_0f45b564a063a155ef94.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 13:33:06 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 13:33:06 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677187986_d86dd298b47af994d0d8.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 14:12:17 --> Undefined variable $pager
+in APPPATH\Views\dictionary\diclist.php on line 94.
+ 1 APPPATH\Views\dictionary\diclist.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\dictionary\\diclist.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(49): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 14:13:26 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 14:13:26 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(92): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677190406_c4ce9763cf7a0e28e1ca.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 14:16:43 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(93): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 14:16:43 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(93): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677190603_1f8925210ef8d0b56ffa.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 14:18:05 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(95): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 14:18:05 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(95): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677190685_2fbfd0b07163c56c3f2c.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-23 14:21:51 --> mysqli_sql_exception: Duplicate entry '1-1-1-4' for key 'word_id_2' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_me...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_me...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_me...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_me...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\xampp\htdocs\etkal\system\Model.php(693): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\xampp\htdocs\etkal\app\Models\WordMeaningModel.php(97): CodeIgniter\Model->update()
+#8 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning(Array)
+#9 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('public/asset/im...', Array)
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#11 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#12 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-23 14:21:51 --> Duplicate entry '1-1-1-4' for key 'word_id_2'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `word_meaning` SET `dictionary_id` = \'4\', `user_id` = \'1\', `word_id` = \'1\', `meaning_id` = \'1\', `page_no` = \'1\', `comment` = \'1  ምስል => \', `flag` = 5
+WHERE `word_meaning_id` = \'11628\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE `word_meaning` SET `dictionary_id` = :dictionary_id:, `user_id` = :user_id:, `word_id` = :word_id:, `meaning_id` = :meaning_id:, `page_no` = :page_no:, `comment` = :comment:, `flag` = :flag:
+WHERE `word_meaning_id` = :word_meaning_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(865): CodeIgniter\Model->doUpdate(null, [...])
+ 7 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [...])
+ 8 APPPATH\Models\WordMeaningModel.php(97): CodeIgniter\Model->update()
+ 9 APPPATH\Controllers\Meaning.php(221): App\Models\WordMeaningModel->toinsert_word_meaning([...])
+10 APPPATH\Controllers\Meaning.php(163): App\Controllers\Meaning->importcsvfile('FCPATH\\public\\asset\\import\\1677190911_db3f8b2e6aa5eb0a8e09.csv', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-23 22:36:24 --> Object of class CodeIgniter\Pager\Pager could not be converted to string
+in APPPATH\Views\dictionary\diclist.php on line 30.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 4 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

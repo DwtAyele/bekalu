@@ -1,0 +1,106 @@
+CRITICAL - 2023-01-18 12:01:25 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in SYSTEMPATH\Validation\Validation.php on line 302.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'SYSTEMPATH\\Validation\\Validation.php', 302)
+ 2 SYSTEMPATH\Validation\Validation.php(302): trim(null)
+ 3 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('searctext', 'searctext', null, [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Search.php(48): CodeIgniter\Controller->validate([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:09:13 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:09:59 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:00 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:01 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:01 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:02 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:02 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 12:10:04 --> Undefined variable $validation
+in APPPATH\Views\search\search.php on line 13.
+ 1 APPPATH\Views\search\search.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\search\\search.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(66): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-18 19:14:37 --> Array to string conversion
+in APPPATH\Controllers\Search.php on line 53.
+ 1 APPPATH\Controllers\Search.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Search.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

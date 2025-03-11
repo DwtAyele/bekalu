@@ -1,0 +1,294 @@
+CRITICAL - 2022-10-14 08:33:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\User.php(83): CodeIgniter\Model->update('login_at')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 09:33:21 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('dwtk.ayele@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], 'dwtk.ayele@gmail.com')
+ 3 APPPATH\Controllers\User.php(83): CodeIgniter\Model->update('email = ', 'dwtk.ayele@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 09:35:50 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('dwtk.ayele@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], 'dwtk.ayele@gmail.com')
+ 3 APPPATH\Controllers\User.php(83): CodeIgniter\Model->update('email = ', 'dwtk.ayele@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 09:46:11 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('dwtk.ayele@gmail.com', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], 'dwtk.ayele@gmail.com')
+ 3 APPPATH\Controllers\User.php(83): CodeIgniter\Model->update('email = ', 'dwtk.ayele@gmail.com')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:02:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\User.php(83): CodeIgniter\Model->update('email = ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:05:54 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 83.
+ 1 APPPATH\Controllers\User.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:41:22 --> Call to a member function userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:42:37 --> Call to a member function userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:42:38 --> Call to a member function userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:42:40 --> Call to a member function userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:42:42 --> Call to a member function userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:44:46 --> Call to a member function session_userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:44:47 --> Call to a member function session_userdata() on null
+in APPPATH\Controllers\User.php on line 227.
+ 1 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 2 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 10:48:17 --> The route for "http://localhost/etkal" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/etkal')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\User.php(228): redirect('http://localhost/etkal')
+ 4 APPPATH\Controllers\User.php(28): App\Controllers\User->check_login()
+ 5 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\User->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 11:54:59 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 80.
+ 1 APPPATH\Controllers\User.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 11:55:37 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 80.
+ 1 APPPATH\Controllers\User.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 11:55:46 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 80.
+ 1 APPPATH\Controllers\User.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:01:52 --> Undefined array key "id"
+in APPPATH\Controllers\User.php on line 80.
+ 1 APPPATH\Controllers\User.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\User.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:02:26 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\User.php(86): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:04:09 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\User.php(86): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:06:25 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\User.php(86): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:07:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\User.php(86): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 12:40:18 --> preg_match(): Argument #2 ($subject) must be of type string, array given
+in SYSTEMPATH\Validation\Validation.php on line 292.
+ 1 SYSTEMPATH\Validation\Validation.php(292): preg_match('/(.*?)\\[(.*)\\]/', [...], null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('0', '0', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\User.php(70): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:15:29 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\User.php on line 178.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\User.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\User')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\User')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\User', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:16:30 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 160.
+ 1 APPPATH\Controllers\User.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:17:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 160.
+ 1 APPPATH\Controllers\User.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:18:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 160.
+ 1 APPPATH\Controllers\User.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:20:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 161.
+ 1 APPPATH\Controllers\User.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 161)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:21:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 161.
+ 1 APPPATH\Controllers\User.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 161)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:25:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 162.
+ 1 APPPATH\Controllers\User.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:26:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 162.
+ 1 APPPATH\Controllers\User.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:33:31 --> Undefined variable $passw
+in APPPATH\Controllers\User.php on line 172.
+ 1 APPPATH\Controllers\User.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $passw', 'APPPATH\\Controllers\\User.php', 172)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:43:03 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\User.php(166): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 16:44:31 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1577.
+ 1 SYSTEMPATH\BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\User.php(166): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->recoverpassword()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 21:06:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\User.php on line 66.
+ 1 APPPATH\Controllers\User.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\User.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-14 21:24:17 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 6.
+ 1 APPPATH\Views\partials\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\login\login.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\login.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login/login', [], true)
+ 9 APPPATH\Controllers\User.php(195): view('login/login', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\User->signout()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

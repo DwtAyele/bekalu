@@ -1,0 +1,106 @@
+CRITICAL - 2022-12-20 13:35:00 --> fgetcsv(): Argument #1 ($stream) must be of type resource, string given
+in APPPATH\Controllers\Meaning.php on line 249.
+ 1 APPPATH\Controllers\Meaning.php(249): fgetcsv('FCPATH\\public\\asset\\import\\1671572100_f60fbb8dd64b6d924e58.csv', 1000, ',')
+ 2 APPPATH\Controllers\Meaning.php(232): App\Controllers\Meaning->importfile('FCPATH\\public\\asset\\import\\1671572100_f60fbb8dd64b6d924e58.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 13:37:01 --> Undefined array key 4
+in APPPATH\Controllers\Meaning.php on line 257.
+ 1 APPPATH\Controllers\Meaning.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Meaning.php', 257)
+ 2 APPPATH\Controllers\Meaning.php(232): App\Controllers\Meaning->importfile('FCPATH\\public\\asset\\import\\1671572221_c6f027bbeadc1a062d9a.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 13:38:04 --> Undefined array key 4
+in APPPATH\Controllers\Meaning.php on line 257.
+ 1 APPPATH\Controllers\Meaning.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Meaning.php', 257)
+ 2 APPPATH\Controllers\Meaning.php(232): App\Controllers\Meaning->importfile('FCPATH\\public\\asset\\import\\1671572284_7e7a4de773315fa5aa1e.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 13:38:28 --> Undefined array key 4
+in APPPATH\Controllers\Meaning.php on line 257.
+ 1 APPPATH\Controllers\Meaning.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'APPPATH\\Controllers\\Meaning.php', 257)
+ 2 APPPATH\Controllers\Meaning.php(232): App\Controllers\Meaning->importfile('FCPATH\\public\\asset\\import\\1671572308_6dccc3ebc70654f0d5b3.csv')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 13:52:18 --> Cannot use [] for reading
+in APPPATH\Controllers\Meaning.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 13:59:30 --> Undefined array key "languagefrom"
+in APPPATH\Models\WordsModel.php on line 74.
+ 1 APPPATH\Models\WordsModel.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "languagefrom"', 'APPPATH\\Models\\WordsModel.php', 74)
+ 2 APPPATH\Controllers\Meaning.php(215): App\Models\WordsModel->insert_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 14:09:11 --> Undefined array key "word"
+in APPPATH\Models\WordsModel.php on line 81.
+ 1 APPPATH\Models\WordsModel.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Models\\WordsModel.php', 81)
+ 2 APPPATH\Controllers\Meaning.php(215): App\Models\WordsModel->insert_word([...])
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-20 14:18:08 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `word_id...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `word_id...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `word_id...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `word_id...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(81): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(215): App\Models\WordsModel->insert_word(Array)
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#10 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-20 14:18:08 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `word_id`
+FROM `words`
+WHERE `word` = (\'ሀ\',\'ሂሶጵ\',\'ሂን\',\'ሂጋዮን\',\'ሄርሜስ\',\'ሄሮድስ\',\'ሆሜር\',\'ለ\',\'ለቅሶ፤ ሐዘን\',\'ለአምላክ የተወሰኑ መሆንን የሚያሳየው ቅዱስ ምልክት\',\'ለአምላክ ያደሩ መሆን\',\'ሊቀ ካህናት\',\'ሌዊ፤ ሌዋዊ\',\'ሌዋታን\',\'ሌፕተን\',\'ሎግ\',\'ሐ\',\'ሐዋርያ\',\'ሐዲስ\',\'ሕግ\',\'ሕግ አስከባሪዎች\',\'መ\',\'መላእክት\',\'መሐላ\',\'መሠዊያ\',\'መሥዋዕት\',\'መሲሕ\',\'መሳፍንት\',\'መቀባት\',\'መቃረም\',\'መቃብር\',\'መቄዶንያ\',\'መቅደስ\',\'መቆንጠጫዎች\',\'መተላለፍ\',\'መተት\',\'መታሰቢያ መቃብር\',\'መና\',\'መናፍስታዊ ድርጊት\',\'መናፍስት ጠሪ\',\'መንገድ\',\'መንፈስ ቅዱስ\',\'መካከለኛ\',\'መኮስተሪያዎች\',\'መውቃት፤ አውድማ\',\'መዝሙር\',\'መያዣ\',\'መገኘት\',\'መጋረጃ\',\'ሙሾ\',\'ሙትላቤን\',\'ሚልኮም\',\'ሚክታም\',\'ማሃላት\',\'ማልካም\',\'ማስኪል\',\'ማቅ\',\'ማኅበረሰብ\',\'ማኅተም\',\'ማይል\',\'ማግ\',\'ሜሮዳክ\',\'ሜዶናውያን፤ ሜዶን\',\'ምልክት\',\'ምሥራቹ\',\'ምሥክር\',\'ምርኮ\',\'ምሳሌ\',\'ምናን\',\'ምንዝር\',\'ምኩራብ\',\'ሞሎክ\',\'ሠ\',\'ሠረገላ\',\'ረ\',\'ረዓብ\',\'ርኩስ\',\'ሮማን\',\'ሰ\',\'ሰቅል\',\'ሰይጣን\',\'ሰዱቃውያን\',\'ሱራፌል\',\'ሲህ\',\'ሲኦል\',\'ሲዋን\',\'ሳምራውያን\',\'ሳንሄድሪን\',\'ሴላ\',\'ስርቲስ\',\'ስርየት\',\'ስንዝር\',\'ስእለት\',\'ሶርያ፤ ሶርያውያን\',\'ሸ\',\'ሸሚኒት\',\'ሸምበቆ፤ መቃ\',\'ሸክላ ሠሪ\',\'ሺባት\',\'ሽመና\',\'ሽማግሌ\',\'ቀ\',\'ቀንበር\',\'ቀንድ\',\'ቁባት\',\'ቂጣ\',\'ቃብ\',\'ቄሳር\',\'ቅዱሳን መጻሕፍት\',\'ቅዱስ ሚስጥር\',\'ቅዱስ፤ ቅድስና\',\'ቅዱስ አገልግሎት\',\'ቅድስተ ቅዱሳን\',\'ቅድስቱ\',\'ቆሮስ\',\'በ\',\'በትረ መንግሥት\',\'በአምላክ ፊት የቀረበ ኅብስት\',\'በኩር\',\'ቡል\',\'ባለ ራእይ\',\'ባአል\',\'ባዶስ\',\'ቤተ መቅደስ\',\'ቤዛ\',\'ብራና\',\'ብርጉድ\',\'ብዔልዜቡል\',\'ተ\',\'ተራፊም\',\'ተአምራት\',\'ቲሽሪ\',\'ታላቁ መከራ\',\'ታላንት\',\'ታማኝ ፍቅር\',\'ቴቤት\',\'ትንሣኤ\',\'ትንቢት\',\'ቸ\',\'ቸነፈር\',\'ነ\',\'ነቢይ\',\'ነጭ ዕጣን\',\'ነፃ ሰው፤ ነፃ የወጣ ሰው\',\'ኒሳን\',\'ናርዶስ\',\'ናታኒም\',\'ኔሂሎት\',\'ኔፍሊም\',\'ንስሐ\',\'ንጹሕ\',\'አ\',\'አላሞት\',\'አልባስጥሮስ\',\'አልፋና ኦሜጋ\',\'አሜን\',\'አሥራት\',\'አረማይክ\',\'አራም፤ አራማውያን\',\'አርማጌዶን\',\'አርዮስፋጎስ\',\'አሴልጊያ\',\'አስተዳዳሪ\',\'አስታሮት\',\'አቢብ\',\'አብ\',\'አንበጦች\',\'አካይያ\',\'አዛዜል\',\'አይሁድ\',\'አዳር\',\'አጃ\',\'አጋንንት\',\'አጥቢያ ኮከብ\',\'ኡሪምና ቱሚም\',\'ኢትዮጵያ\',\'ኢዮቤልዩ\',\'ኢፍ\',\'ኤሉል\',\'ኤታኒም\',\'ኤዶም\',\'ኤፉድ\',\'ኤፍራጥስ\',\'ኤፍሬም\',\'እልዋሪቆን\',\'እርሾ\',\'እርግማን\',\'እስራኤል\',\'እስያ\',\'እቶን፤ ምድጃ\',\'እንጨት\',\'እውነተኛው አምላክ\',\'እጅ መጫን\',\'እግር ግንድ\',\'ኦሜር\',\'ከ\',\'ከሞሽ\',\'ከርቤ\',\'ከነአን\',\'ከፍ ያለ የማምለኪያ ቦታ\',\'ኪሩቤል\',\'ኪስሌው\',\'ክህደት\',\'ክርስቲያን\',\'ክርስቶስ\',\'ክንድ\',\'ክፉው\',\'ኮሬብ፤ የኮሬብ ተራራ\',\'ኮከብ ቆጣሪ\',\'ወ\',\'ወንጭፍ\',\'ወደ ላይ የመውጣት መዝሙር\',\'ወደ ይሁዲነት የተለወጠ\',\'ዋና ወኪል\',\'ዋግ\',\'ዐ\',\'ዓምድ\',\'ዓይን ያወጣ ምግባር\',\'ዕብራዊ፤ ዕብራይስጥ\',\'ዕጣን\',\'ዕጣ\',\'ዘ\',\'ዙስ\',\'ዚፍ\',\'ዛጎል (ኮራል)\',\'ዝሙት አዳሪ\',\'ዝሙት\',\'የ\',\'የሄሮድስ ሥርወ መንግሥት ደጋፊዎች\',\'የሊባኖስ የተራራ ሰንሰለት\',\'የሕይወት ዛፍ\',\'የመለኪያ ዘንግ\',\'የመላእክት አለቃ\',\'የመልካምና ክፉ እውቀት ዛፍ\',\'የመማጸኛ ከተሞች\',\'የመሠዊያው ቀንዶች\',\'የመታደስ በዓል\',\'የመከራ እንጨት\',\'የመከር በዓል፤ የሳምንታት በዓል\',\'የመዝሙር መግለጫ\',\'የመገናኛ ድንኳን\',\'የመጠጥ መባ\',\'የመጨረሻዎቹ ቀናት\',\'የሙሴ ሕግ\',\'የሙዚቀኞች ቡድን መሪ\',\'የሚቃጠል መባ\',\'የሚወዘወዝ መባ\',\'የማምለኪያ ዓምድ\',\'የማምለኪያ ግንድ\',\'የማኅተም ቀለበት\',\'የማዕዘን ድንጋይ\',\'የምሕረት ስጦታ፤ ምጽዋት\',\'የምስጋና መባ\',\'የሥርዓቱ መደምደሚያ\',\'የሥጋ ደዌ\',\'የሮም አገረ ገዢ\',\'የሰለሞን መተላለፊያ\',\'የሰማይ ንግሥት\',\'የሰው ልጅ\',\'የስርየት መክደኛ\',\'የስርየት ቀን\',\'የስእለት መባ\',\'የቂጣ በዓል\',\'የቃል ኪዳኑ ታቦት\',\'የበላይ ተመልካች\',\'የበደል መባ\',\'የተርሴስ መርከቦች\',\'የኃጢአት መባ\',\'የኅብረት መሥዋዕት\',\'የናዝሬት ሰው\',\'የንጋት ኮከብ\',\'የአምላክ መንግሥት\',\'የአሮን ልጆች\',\'የአውራጃ ገዢ\',\'የኢስጦይክ ፈላስፎች\',\'የኤፊቆሮስ ፈላስፎች\',\'የእሳት ሐይቅ\',\'የእሳት ማጥፊያ\',\'የከለዳውያን ምድር፤ ከለዳውያን\',\'የከበሩ ድንጋዮች\',\'የከብት መውጊያ\',\'የካህናት አለቃ\',\'የክብር ዘብ\',\'የወር መባቻ፤ አዲስ ጨረቃ\',\'የወንድምን ሚስት ማግባት\',\'የወይን መጭመቂያ\',\'የወይን ጠጅ አቁማዳ\',\'የዓምድ ራስ\',\'የዝግጅት ቀን\',\'የደረት ኪስ\',\'የዱቱን\',\'የዳስ በዓል\',\'የዳዊት ልጅ\',\'የዳዊት ከተማ\',\'የጉባኤ አገልጋይ\',\'የጌታ ራት\',\'የጦር ትጥቅ\',\'የፍሬ በኩራት፤ በኩራት\',\'የፍርድ ቀን\',\'የፍርድ ወንበር\',\'ያዕቆብ\',\'ይሁዳ\',\'ይሖዋ\',\'ደ\',\'ደረቅ ወንዝ\',\'ደንገል\',\'ዲናር\',\'ዲያብሎስ\',\'ዳሪክ\',\'ዳጎን\',\'ድራክማ\',\'ድር\',\'ጀ\',\'ጃንደረባ\',\'ገ\',\'ገለባ\',\'ገነት\',\'ገጸ ኅብስት\',\'ጉባኤ\',\'ጉብታ\',\'ጊልያድ\',\'ጊቲት\',\'ጌራ\',\'ግሪክ፤ ግሪክኛ\',\'ግርዘት\',\'ግቢ\',\'ግብር\',\'ግዞት\',\'ጠ\',\'ጠባቂ\',\'ጠንቋይ\',\'ጣዖት፤ የጣዖት አምልኮ\',\'ጥልቁ\',\'ጥምቀት፤ ማጥመቅ\',\'ጥምጥም\',\'ጥቅልል\',\'ጨ\',\'ጭቁኝ\',\'ጰ\',\'ጴንጤቆስጤ\',\'ጸ\',\'ጸሐፊ\',\'ጽዮን፤ የጽዮን ተራራ\',\'ጽድቅ\',\'ጾም\',\'ፀ\',\'ፀረ ክርስቶስ\',\'ፈ\',\'ፈርዖን\',\'ፊም\',\'ፋሲካ\',\'ፋተም\',\'ፍልስጤም፤ ፍልስጤማውያን\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\',\'\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\')
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `word_id`
+FROM `words`
+WHERE `word` = (\'ሀ\',\'ሂሶጵ\',\'ሂን\',\'ሂጋዮን\',\'ሄርሜስ\',\'ሄሮድስ\',\'ሆሜር\',\'ለ\',\'ለቅሶ፤ ሐዘን\',\'ለአምላክ የተወሰኑ መሆንን የሚያሳየው ቅዱስ ምልክት\',\'ለአምላክ ያደሩ መሆን\',\'ሊቀ ካህናት\',\'ሌዊ፤ ሌዋዊ\',\'ሌዋታን\',\'ሌፕተን\',\'ሎግ\',\'ሐ\',\'ሐዋርያ\',\'ሐዲስ\',\'ሕግ\',\'ሕግ አስከባሪዎች\',\'መ\',\'መላእክት\',\'መሐላ\',\'መሠዊያ\',\'መሥዋዕት\',\'መሲሕ\',\'መሳፍንት\',\'መቀባት\',\'መቃረም\',\'መቃብር\',\'መቄዶንያ\',\'መቅደስ\',\'መቆንጠጫዎች\',\'መተላለፍ\',\'መተት\',\'መታሰቢያ መቃብር\',\'መና\',\'መናፍስታዊ ድርጊት\',\'መናፍስት ጠሪ\',\'መንገድ\',\'መንፈስ ቅዱስ\',\'መካከለኛ\',\'መኮስተሪያዎች\',\'መውቃት፤ አውድማ\',\'መዝሙር\',\'መያዣ\',\'መገኘት\',\'መጋረጃ\',\'ሙሾ\',\'ሙትላቤን\',\'ሚልኮም\',\'ሚክታም\',\'ማሃላት\',\'ማልካም\',\'ማስኪል\',\'ማቅ\',\'ማኅበረሰብ\',\'ማኅተም\',\'ማይል\',\'ማግ\',\'ሜሮዳክ\',\'ሜዶናውያን፤ ሜዶን\',\'ምልክት\',\'ምሥራቹ\',\'ምሥክር\',\'ምርኮ\',\'ምሳሌ\',\'ምናን\',\'ምንዝር\',\'ምኩራብ\',\'ሞሎክ\',\'ሠ\',\'ሠረገላ\',\'ረ\',\'ረዓብ\',\'ርኩስ\',\'ሮማን\',\'ሰ\',\'ሰቅል\',\'ሰይጣን\',\'ሰዱቃውያን\',\'ሱራፌል\',\'ሲህ\',\'ሲኦል\',\'ሲዋን\',\'ሳምራውያን\',\'ሳንሄድሪን\',\'ሴላ\',\'ስርቲስ\',\'ስርየት\',\'ስንዝር\',\'ስእለት\',\'ሶርያ፤ ሶርያውያን\',\'ሸ\',\'ሸሚኒት\',\'ሸምበቆ፤ መቃ\',\'ሸክላ ሠሪ\',\'ሺባት\',\'ሽመና\',\'ሽማግሌ\',\'ቀ\',\'ቀንበር\',\'ቀንድ\',\'ቁባት\',\'ቂጣ\',\'ቃብ\',\'ቄሳር\',\'ቅዱሳን መጻሕፍት\',\'ቅዱስ ሚስጥር\',\'ቅዱስ፤ ቅድስና\',\'ቅዱስ አገልግሎት\',\'ቅድስተ ቅዱሳን\',\'ቅድስቱ\',\'ቆሮስ\',\'በ\',\'በትረ መንግሥት\',\'በአምላክ ፊት የቀረበ ኅብስት\',\'በኩር\',\'ቡል\',\'ባለ ራእይ\',\'ባአል\',\'ባዶስ\',\'ቤተ መቅደስ\',\'ቤዛ\',\'ብራና\',\'ብርጉድ\',\'ብዔልዜቡል\',\'ተ\',\'ተራፊም\',\'ተአምራት\',\'ቲሽሪ\',\'ታላቁ መከራ\',\'ታላንት\',\'ታማኝ ፍቅር\',\'ቴቤት\',\'ትንሣኤ\',\'ትንቢት\',\'ቸ\',\'ቸነፈር\',\'ነ\',\'ነቢይ\',\'ነጭ ዕጣን\',\'ነፃ ሰው፤ ነፃ የወጣ ሰው\',\'ኒሳን\',\'ናርዶስ\',\'ናታኒም\',\'ኔሂሎት\',\'ኔፍሊም\',\'ንስሐ\',\'ንጹሕ\',\'አ\',\'አላሞት\',\'አልባስጥሮስ\',\'አልፋና ኦሜጋ\',\'አሜን\',\'አሥራት\',\'አረማይክ\',\'አራም፤ አራማውያን\',\'አርማጌዶን\',\'አርዮስፋጎስ\',\'አሴልጊያ\',\'አስተዳዳሪ\',\'አስታሮት\',\'አቢብ\',\'አብ\',\'አንበጦች\',\'አካይያ\',\'አዛዜል\',\'አይሁድ\',\'አዳር\',\'አጃ\',\'አጋንንት\',\'አጥቢያ ኮከብ\',\'ኡሪምና ቱሚም\',\'ኢትዮጵያ\',\'ኢዮቤልዩ\',\'ኢፍ\',\'ኤሉል\',\'ኤታኒም\',\'ኤዶም\',\'ኤፉድ\',\'ኤፍራጥስ\',\'ኤፍሬም\',\'እልዋሪቆን\',\'እርሾ\',\'እርግማን\',\'እስራኤል\',\'እስያ\',\'እቶን፤ ምድጃ\',\'እንጨት\',\'እውነተኛው አምላክ\',\'እጅ መጫን\',\'እግር ግንድ\',\'ኦሜር\',\'ከ\',\'ከሞሽ\',\'ከርቤ\',\'ከነአን\',\'ከፍ ያለ የማምለኪያ ቦታ\',\'ኪሩቤል\',\'ኪስሌው\',\'ክህደት\',\'ክርስቲያን\',\'ክርስቶስ\',\'ክንድ\',\'ክፉው\',\'ኮሬብ፤ የኮሬብ ተራራ\',\'ኮከብ ቆጣሪ\',\'ወ\',\'ወንጭፍ\',\'ወደ ላይ የመውጣት መዝሙር\',\'ወደ ይሁዲነት የተለወጠ\',\'ዋና ወኪል\',\'ዋግ\',\'ዐ\',\'ዓምድ\',\'ዓይን ያወጣ ምግባር\',\'ዕብራዊ፤ ዕብራይስጥ\',\'ዕጣን\',\'ዕጣ\',\'ዘ\',\'ዙስ\',\'ዚፍ\',\'ዛጎል (ኮራል)\',\'ዝሙት አዳሪ\',\'ዝሙት\',\'የ\',\'የሄሮድስ ሥርወ መንግሥት ደጋፊዎች\',\'የሊባኖስ የተራራ ሰንሰለት\',\'የሕይወት ዛፍ\',\'የመለኪያ ዘንግ\',\'የመላእክት አለቃ\',\'የመልካምና ክፉ እውቀት ዛፍ\',\'የመማጸኛ ከተሞች\',\'የመሠዊያው ቀንዶች\',\'የመታደስ በዓል\',\'የመከራ እንጨት\',\'የመከር በዓል፤ የሳምንታት በዓል\',\'የመዝሙር መግለጫ\',\'የመገናኛ ድንኳን\',\'የመጠጥ መባ\',\'የመጨረሻዎቹ ቀናት\',\'የሙሴ ሕግ\',\'የሙዚቀኞች ቡድን መሪ\',\'የሚቃጠል መባ\',\'የሚወዘወዝ መባ\',\'የማምለኪያ ዓምድ\',\'የማምለኪያ ግንድ\',\'የማኅተም ቀለበት\',\'የማዕዘን ድንጋይ\',\'የምሕረት ስጦታ፤ ምጽዋት\',\'የምስጋና መባ\',\'የሥርዓቱ መደምደሚያ\',\'የሥጋ ደዌ\',\'የሮም አገረ ገዢ\',\'የሰለሞን መተላለፊያ\',\'የሰማይ ንግሥት\',\'የሰው ልጅ\',\'የስርየት መክደኛ\',\'የስርየት ቀን\',\'የስእለት መባ\',\'የቂጣ በዓል\',\'የቃል ኪዳኑ ታቦት\',\'የበላይ ተመልካች\',\'የበደል መባ\',\'የተርሴስ መርከቦች\',\'የኃጢአት መባ\',\'የኅብረት መሥዋዕት\',\'የናዝሬት ሰው\',\'የንጋት ኮከብ\',\'የአምላክ መንግሥት\',\'የአሮን ልጆች\',\'የአውራጃ ገዢ\',\'የኢስጦይክ ፈላስፎች\',\'የኤፊቆሮስ ፈላስፎች\',\'የእሳት ሐይቅ\',\'የእሳት ማጥፊያ\',\'የከለዳውያን ምድር፤ ከለዳውያን\',\'የከበሩ ድንጋዮች\',\'የከብት መውጊያ\',\'የካህናት አለቃ\',\'የክብር ዘብ\',\'የወር መባቻ፤ አዲስ ጨረቃ\',\'የወንድምን ሚስት ማግባት\',\'የወይን መጭመቂያ\',\'የወይን ጠጅ አቁማዳ\',\'የዓምድ ራስ\',\'የዝግጅት ቀን\',\'የደረት ኪስ\',\'የዱቱን\',\'የዳስ በዓል\',\'የዳዊት ልጅ\',\'የዳዊት ከተማ\',\'የጉባኤ አገልጋይ\',\'የጌታ ራት\',\'የጦር ትጥቅ\',\'የፍሬ በኩራት፤ በኩራት\',\'የፍርድ ቀን\',\'የፍርድ ወንበር\',\'ያዕቆብ\',\'ይሁዳ\',\'ይሖዋ\',\'ደ\',\'ደረቅ ወንዝ\',\'ደንገል\',\'ዲናር\',\'ዲያብሎስ\',\'ዳሪክ\',\'ዳጎን\',\'ድራክማ\',\'ድር\',\'ጀ\',\'ጃንደረባ\',\'ገ\',\'ገለባ\',\'ገነት\',\'ገጸ ኅብስት\',\'ጉባኤ\',\'ጉብታ\',\'ጊልያድ\',\'ጊቲት\',\'ጌራ\',\'ግሪክ፤ ግሪክኛ\',\'ግርዘት\',\'ግቢ\',\'ግብር\',\'ግዞት\',\'ጠ\',\'ጠባቂ\',\'ጠንቋይ\',\'ጣዖት፤ የጣዖት አምልኮ\',\'ጥልቁ\',\'ጥምቀት፤ ማጥመቅ\',\'ጥምጥም\',\'ጥቅልል\',\'ጨ\',\'ጭቁኝ\',\'ጰ\',\'ጴንጤቆስጤ\',\'ጸ\',\'ጸሐፊ\',\'ጽዮን፤ የጽዮን ተራራ\',\'ጽድቅ\',\'ጾም\',\'ፀ\',\'ፀረ ክርስቶስ\',\'ፈ\',\'ፈርዖን\',\'ፊም\',\'ፋሲካ\',\'ፋተም\',\'ፍልስጤም፤ ፍልስጤማውያን\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\',\'\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\')
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `word_id`
+FROM `words`
+WHERE `word` = (\'ሀ\',\'ሂሶጵ\',\'ሂን\',\'ሂጋዮን\',\'ሄርሜስ\',\'ሄሮድስ\',\'ሆሜር\',\'ለ\',\'ለቅሶ፤ ሐዘን\',\'ለአምላክ የተወሰኑ መሆንን የሚያሳየው ቅዱስ ምልክት\',\'ለአምላክ ያደሩ መሆን\',\'ሊቀ ካህናት\',\'ሌዊ፤ ሌዋዊ\',\'ሌዋታን\',\'ሌፕተን\',\'ሎግ\',\'ሐ\',\'ሐዋርያ\',\'ሐዲስ\',\'ሕግ\',\'ሕግ አስከባሪዎች\',\'መ\',\'መላእክት\',\'መሐላ\',\'መሠዊያ\',\'መሥዋዕት\',\'መሲሕ\',\'መሳፍንት\',\'መቀባት\',\'መቃረም\',\'መቃብር\',\'መቄዶንያ\',\'መቅደስ\',\'መቆንጠጫዎች\',\'መተላለፍ\',\'መተት\',\'መታሰቢያ መቃብር\',\'መና\',\'መናፍስታዊ ድርጊት\',\'መናፍስት ጠሪ\',\'መንገድ\',\'መንፈስ ቅዱስ\',\'መካከለኛ\',\'መኮስተሪያዎች\',\'መውቃት፤ አውድማ\',\'መዝሙር\',\'መያዣ\',\'መገኘት\',\'መጋረጃ\',\'ሙሾ\',\'ሙትላቤን\',\'ሚልኮም\',\'ሚክታም\',\'ማሃላት\',\'ማልካም\',\'ማስኪል\',\'ማቅ\',\'ማኅበረሰብ\',\'ማኅተም\',\'ማይል\',\'ማግ\',\'ሜሮዳክ\',\'ሜዶናውያን፤ ሜዶን\',\'ምልክት\',\'ምሥራቹ\',\'ምሥክር\',\'ምርኮ\',\'ምሳሌ\',\'ምናን\',\'ምንዝር\',\'ምኩራብ\',\'ሞሎክ\',\'ሠ\',\'ሠረገላ\',\'ረ\',\'ረዓብ\',\'ርኩስ\',\'ሮማን\',\'ሰ\',\'ሰቅል\',\'ሰይጣን\',\'ሰዱቃውያን\',\'ሱራፌል\',\'ሲህ\',\'ሲኦል\',\'ሲዋን\',\'ሳምራውያን\',\'ሳንሄድሪን\',\'ሴላ\',\'ስርቲስ\',\'ስርየት\',\'ስንዝር\',\'ስእለት\',\'ሶርያ፤ ሶርያውያን\',\'ሸ\',\'ሸሚኒት\',\'ሸምበቆ፤ መቃ\',\'ሸክላ ሠሪ\',\'ሺባት\',\'ሽመና\',\'ሽማግሌ\',\'ቀ\',\'ቀንበር\',\'ቀንድ\',\'ቁባት\',\'ቂጣ\',\'ቃብ\',\'ቄሳር\',\'ቅዱሳን መጻሕፍት\',\'ቅዱስ ሚስጥር\',\'ቅዱስ፤ ቅድስና\',\'ቅዱስ አገልግሎት\',\'ቅድስተ ቅዱሳን\',\'ቅድስቱ\',\'ቆሮስ\',\'በ\',\'በትረ መንግሥት\',\'በአምላክ ፊት የቀረበ ኅብስት\',\'በኩር\',\'ቡል\',\'ባለ ራእይ\',\'ባአል\',\'ባዶስ\',\'ቤተ መቅደስ\',\'ቤዛ\',\'ብራና\',\'ብርጉድ\',\'ብዔልዜቡል\',\'ተ\',\'ተራፊም\',\'ተአምራት\',\'ቲሽሪ\',\'ታላቁ መከራ\',\'ታላንት\',\'ታማኝ ፍቅር\',\'ቴቤት\',\'ትንሣኤ\',\'ትንቢት\',\'ቸ\',\'ቸነፈር\',\'ነ\',\'ነቢይ\',\'ነጭ ዕጣን\',\'ነፃ ሰው፤ ነፃ የወጣ ሰው\',\'ኒሳን\',\'ናርዶስ\',\'ናታኒም\',\'ኔሂሎት\',\'ኔፍሊም\',\'ንስሐ\',\'ንጹሕ\',\'አ\',\'አላሞት\',\'አልባስጥሮስ\',\'አልፋና ኦሜጋ\',\'አሜን\',\'አሥራት\',\'አረማይክ\',\'አራም፤ አራማውያን\',\'አርማጌዶን\',\'አርዮስፋጎስ\',\'አሴልጊያ\',\'አስተዳዳሪ\',\'አስታሮት\',\'አቢብ\',\'አብ\',\'አንበጦች\',\'አካይያ\',\'አዛዜል\',\'አይሁድ\',\'አዳር\',\'አጃ\',\'አጋንንት\',\'አጥቢያ ኮከብ\',\'ኡሪምና ቱሚም\',\'ኢትዮጵያ\',\'ኢዮቤልዩ\',\'ኢፍ\',\'ኤሉል\',\'ኤታኒም\',\'ኤዶም\',\'ኤፉድ\',\'ኤፍራጥስ\',\'ኤፍሬም\',\'እልዋሪቆን\',\'እርሾ\',\'እርግማን\',\'እስራኤል\',\'እስያ\',\'እቶን፤ ምድጃ\',\'እንጨት\',\'እውነተኛው አምላክ\',\'እጅ መጫን\',\'እግር ግንድ\',\'ኦሜር\',\'ከ\',\'ከሞሽ\',\'ከርቤ\',\'ከነአን\',\'ከፍ ያለ የማምለኪያ ቦታ\',\'ኪሩቤል\',\'ኪስሌው\',\'ክህደት\',\'ክርስቲያን\',\'ክርስቶስ\',\'ክንድ\',\'ክፉው\',\'ኮሬብ፤ የኮሬብ ተራራ\',\'ኮከብ ቆጣሪ\',\'ወ\',\'ወንጭፍ\',\'ወደ ላይ የመውጣት መዝሙር\',\'ወደ ይሁዲነት የተለወጠ\',\'ዋና ወኪል\',\'ዋግ\',\'ዐ\',\'ዓምድ\',\'ዓይን ያወጣ ምግባር\',\'ዕብራዊ፤ ዕብራይስጥ\',\'ዕጣን\',\'ዕጣ\',\'ዘ\',\'ዙስ\',\'ዚፍ\',\'ዛጎል (ኮራል)\',\'ዝሙት አዳሪ\',\'ዝሙት\',\'የ\',\'የሄሮድስ ሥርወ መንግሥት ደጋፊዎች\',\'የሊባኖስ የተራራ ሰንሰለት\',\'የሕይወት ዛፍ\',\'የመለኪያ ዘንግ\',\'የመላእክት አለቃ\',\'የመልካምና ክፉ እውቀት ዛፍ\',\'የመማጸኛ ከተሞች\',\'የመሠዊያው ቀንዶች\',\'የመታደስ በዓል\',\'የመከራ እንጨት\',\'የመከር በዓል፤ የሳምንታት በዓል\',\'የመዝሙር መግለጫ\',\'የመገናኛ ድንኳን\',\'የመጠጥ መባ\',\'የመጨረሻዎቹ ቀናት\',\'የሙሴ ሕግ\',\'የሙዚቀኞች ቡድን መሪ\',\'የሚቃጠል መባ\',\'የሚወዘወዝ መባ\',\'የማምለኪያ ዓምድ\',\'የማምለኪያ ግንድ\',\'የማኅተም ቀለበት\',\'የማዕዘን ድንጋይ\',\'የምሕረት ስጦታ፤ ምጽዋት\',\'የምስጋና መባ\',\'የሥርዓቱ መደምደሚያ\',\'የሥጋ ደዌ\',\'የሮም አገረ ገዢ\',\'የሰለሞን መተላለፊያ\',\'የሰማይ ንግሥት\',\'የሰው ልጅ\',\'የስርየት መክደኛ\',\'የስርየት ቀን\',\'የስእለት መባ\',\'የቂጣ በዓል\',\'የቃል ኪዳኑ ታቦት\',\'የበላይ ተመልካች\',\'የበደል መባ\',\'የተርሴስ መርከቦች\',\'የኃጢአት መባ\',\'የኅብረት መሥዋዕት\',\'የናዝሬት ሰው\',\'የንጋት ኮከብ\',\'የአምላክ መንግሥት\',\'የአሮን ልጆች\',\'የአውራጃ ገዢ\',\'የኢስጦይክ ፈላስፎች\',\'የኤፊቆሮስ ፈላስፎች\',\'የእሳት ሐይቅ\',\'የእሳት ማጥፊያ\',\'የከለዳውያን ምድር፤ ከለዳውያን\',\'የከበሩ ድንጋዮች\',\'የከብት መውጊያ\',\'የካህናት አለቃ\',\'የክብር ዘብ\',\'የወር መባቻ፤ አዲስ ጨረቃ\',\'የወንድምን ሚስት ማግባት\',\'የወይን መጭመቂያ\',\'የወይን ጠጅ አቁማዳ\',\'የዓምድ ራስ\',\'የዝግጅት ቀን\',\'የደረት ኪስ\',\'የዱቱን\',\'የዳስ በዓል\',\'የዳዊት ልጅ\',\'የዳዊት ከተማ\',\'የጉባኤ አገልጋይ\',\'የጌታ ራት\',\'የጦር ትጥቅ\',\'የፍሬ በኩራት፤ በኩራት\',\'የፍርድ ቀን\',\'የፍርድ ወንበር\',\'ያዕቆብ\',\'ይሁዳ\',\'ይሖዋ\',\'ደ\',\'ደረቅ ወንዝ\',\'ደንገል\',\'ዲናር\',\'ዲያብሎስ\',\'ዳሪክ\',\'ዳጎን\',\'ድራክማ\',\'ድር\',\'ጀ\',\'ጃንደረባ\',\'ገ\',\'ገለባ\',\'ገነት\',\'ገጸ ኅብስት\',\'ጉባኤ\',\'ጉብታ\',\'ጊልያድ\',\'ጊቲት\',\'ጌራ\',\'ግሪክ፤ ግሪክኛ\',\'ግርዘት\',\'ግቢ\',\'ግብር\',\'ግዞት\',\'ጠ\',\'ጠባቂ\',\'ጠንቋይ\',\'ጣዖት፤ የጣዖት አምልኮ\',\'ጥልቁ\',\'ጥምቀት፤ ማጥመቅ\',\'ጥምጥም\',\'ጥቅልል\',\'ጨ\',\'ጭቁኝ\',\'ጰ\',\'ጴንጤቆስጤ\',\'ጸ\',\'ጸሐፊ\',\'ጽዮን፤ የጽዮን ተራራ\',\'ጽድቅ\',\'ጾም\',\'ፀ\',\'ፀረ ክርስቶስ\',\'ፈ\',\'ፈርዖን\',\'ፊም\',\'ፋሲካ\',\'ፋተም\',\'ፍልስጤም፤ ፍልስጤማውያን\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\',\'\',\'ፐ\',\'ፑሪም\',\'ፖርኒያ\')
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `word_id`
+FROM `words`
+WHERE `word` = :word:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\WordsModel.php(81): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Meaning.php(215): App\Models\WordsModel->insert_word([...])
+ 9 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 14:19:49 --> Array to string conversion
+in APPPATH\Views\dictionary\import.php on line 43.
+ 1 APPPATH\Views\dictionary\import.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\import.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(224): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

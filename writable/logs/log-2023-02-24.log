@@ -1,0 +1,1432 @@
+CRITICAL - 2023-02-24 08:58:50 --> Undefined variable $pager
+in APPPATH\Views\dictionary\diclist.php on line 89.
+ 1 APPPATH\Views\dictionary\diclist.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'APPPATH\\Views\\dictionary\\diclist.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(49): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 09:00:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\dictionary\diclist.php on line 89.
+ 1 APPPATH\Views\dictionary\diclist.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\dictionary\\diclist.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\diclist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/diclist', [], true)
+ 5 APPPATH\Controllers\Dictionary.php(91): view('dictionary/diclist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarypage('4')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 09:47:51 --> Undefined variable $pages
+in APPPATH\Views\search\search.php on line 163.
+ 1 APPPATH\Views\search\search.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pages', 'APPPATH\\Views\\search\\search.php', 163)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 09:51:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\search\search.php on line 163.
+ 1 APPPATH\Views\search\search.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\search\\search.php', 163)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\search\\search.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('search/search', [], true)
+ 5 APPPATH\Controllers\Search.php(37): view('search/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:06:11 --> Undefined array key "role_action_id"
+in APPPATH\Controllers\Dictionary.php on line 30.
+ 1 APPPATH\Controllers\Dictionary.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_action_id"', 'APPPATH\\Controllers\\Dictionary.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:07:49 --> Undefined array key "role_action_id"
+in APPPATH\Controllers\Dictionary.php on line 30.
+ 1 APPPATH\Controllers\Dictionary.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_action_id"', 'APPPATH\\Controllers\\Dictionary.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Dictionary->dictionarylist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dictionary))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:54:18 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:55:05 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:55:07 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:05 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:08 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:08 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:09 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:09 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:09 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:09 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:09 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:30 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:31 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:31 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:57:31 --> foreach() argument must be of type array|object, null given
+in APPPATH\Libraries\Functions.php on line 112.
+ 1 APPPATH\Libraries\Functions.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Libraries\\Functions.php', 112)
+ 2 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(null, 'category')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:59:41 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 114.
+ 1 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 13:59:42 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 114.
+ 1 APPPATH\Libraries\Functions.php(70): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:10:17 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 114.
+ 1 APPPATH\Libraries\Functions.php(69): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:13:52 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:13:53 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:13:54 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:16:27 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\login\login.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\login\\login.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('login/login', [], true)
+ 9 APPPATH\Controllers\Users.php(89): view('login/login')
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:18 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:20 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:21 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:21 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:21 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:17:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:38 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:42 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:43 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:45 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:45 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:46 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:46 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:46 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:19:47 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:20 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:21 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:22 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:20:23 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:04 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:05 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:05 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:06 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:06 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:21:06 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:33 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:33 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:34 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:34 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:34 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:34 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:22:36 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:28 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:29 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:31 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:31 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:32 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:32 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:32 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:32 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:32 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:33 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:33 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:34 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:36 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:38 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:39 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:39 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:40 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:40 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:40 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:40 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:41 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:29:44 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\HTTP\RedirectResponse given, called in C:\xampp\htdocs\etkal\app\Controllers\Users.php on line 89
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Users.php(89): view('login/login', Object(CodeIgniter\HTTP\RedirectResponse))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:31:07 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:31:09 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:31:09 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:31:09 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:31:10 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:36:53 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:39:14 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:39:18 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:40:15 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:40:19 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:40:55 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 122.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:43:50 --> Cannot use object of type CodeIgniter\HTTP\ContentSecurityPolicy as array
+in APPPATH\Libraries\Functions.php on line 124.
+ 1 APPPATH\Libraries\Functions.php(74): App\Libraries\Functions::unique_multidim_array(Object(CodeIgniter\HTTP\RedirectResponse), 'category')
+ 2 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 16:48:00 --> Undefined array key 1
+in APPPATH\Views\partials\sidebar.php on line 29.
+ 1 APPPATH\Views\partials\sidebar.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\partials\\sidebar.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/sidebar', null, true)
+ 5 APPPATH\Views\default.php(17): CodeIgniter\View\View->include('partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('users/profile', [], true)
+10 APPPATH\Controllers\Users.php(241): view('users/profile', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->profile()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 17:44:26 --> Request URI segment is out of range: 9
+in SYSTEMPATH\HTTP\URI.php on line 554.
+ 1 SYSTEMPATH\HTTP\URI.php(554): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(9)
+ 2 SYSTEMPATH\Pager\Pager.php(272): CodeIgniter\HTTP\URI->setSegment(9, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(319): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(370): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(123): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\dictionary\wordmeaninglist.php(140): CodeIgniter\Pager\Pager->links()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+11 APPPATH\Controllers\Meaning.php(126): view('dictionary/wordmeaninglist', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 17:44:44 --> Request URI segment is out of range: 9
+in SYSTEMPATH\HTTP\URI.php on line 554.
+ 1 SYSTEMPATH\HTTP\URI.php(554): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(9)
+ 2 SYSTEMPATH\Pager\Pager.php(272): CodeIgniter\HTTP\URI->setSegment(9, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(319): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(370): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(123): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\dictionary\wordmeaninglist.php(72): CodeIgniter\Pager\Pager->links()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+11 APPPATH\Controllers\Meaning.php(126): view('dictionary/wordmeaninglist', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 17:44:47 --> Request URI segment is out of range: 9
+in SYSTEMPATH\HTTP\URI.php on line 554.
+ 1 SYSTEMPATH\HTTP\URI.php(554): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(9)
+ 2 SYSTEMPATH\Pager\Pager.php(272): CodeIgniter\HTTP\URI->setSegment(9, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(319): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(370): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(123): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\dictionary\wordmeaninglist.php(72): CodeIgniter\Pager\Pager->links()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+11 APPPATH\Controllers\Meaning.php(126): view('dictionary/wordmeaninglist', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 17:44:54 --> Request URI segment is out of range: 9
+in SYSTEMPATH\HTTP\URI.php on line 554.
+ 1 SYSTEMPATH\HTTP\URI.php(554): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(9)
+ 2 SYSTEMPATH\Pager\Pager.php(272): CodeIgniter\HTTP\URI->setSegment(9, 2)
+ 3 SYSTEMPATH\Pager\Pager.php(319): CodeIgniter\Pager\Pager->getPageURI(2, 'default', false)
+ 4 SYSTEMPATH\Pager\Pager.php(370): CodeIgniter\Pager\Pager->getNextPageURI('default')
+ 5 SYSTEMPATH\Pager\Pager.php(123): CodeIgniter\Pager\Pager->getDetails('default')
+ 6 SYSTEMPATH\Pager\Pager.php(83): CodeIgniter\Pager\Pager->displayLinks('default', 'default_full')
+ 7 APPPATH\Views\dictionary\wordmeaninglist.php(72): CodeIgniter\Pager\Pager->links()
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+11 APPPATH\Controllers\Meaning.php(126): view('dictionary/wordmeaninglist', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 19:27:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 19:27:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 19:28:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 19:28:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 19:28:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 19:28:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 19:28:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 19:28:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 19:28:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\etkal\system\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Search->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 19:28:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results' at line 12
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT ROW_NUMBER() over ( order by w.word ASC) AS row_num, `w`.`word_id`, `w`.`word`, `w`.`pronunciation`, `w`.`accessibility`, `m`.`meaning`, `m`.`example`, `m`.`homonyms`, `m`.`part_of_speech_id`, `m`.`meaning_image`, `m`.`created_at`, `d`.`full_name`, `d`.`short_name`, `word_meaning`.`word_meaning_id`, `word_meaning`.`user_id`, `word_meaning`.`page_no`, `word_meaning`.`comment`, `num_like`, `num_dislike`, `user_report`, `dica`.`word_name`, `dica`.`word_abbrivation`, `ps`.`part_of_speech`, `ps`.`abbreviation`
+FROM `word_meaning`
+JOIN `words` as `w` ON `word_meaning`.`word_id` = `w`.`word_id`
+JOIN `meanings` AS `m` ON `word_meaning`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `word_meaning`.`dictionary_id` = `d`.`dictionary_id`
+JOIN `users` AS `u` ON `word_meaning`.`user_id` = `u`.`user_id`
+LEFT JOIN `word_dic_abbrivation` AS `wda` ON `w`.`word_id` = `wda`.`word_id`
+LEFT JOIN `dictionary_abbrivation` AS `dica` ON `wda`.`dictionary_abbrivation_id` = `dica`.`dictionary_abbrivation_Id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `d`.`flag` < IS NULL
+GROUP BY `word_meaning`.`word_meaning_id`
+) CI_count_all_results', [], false)
+ 5 SYSTEMPATH\Model.php(551): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Search.php(33): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-24 20:37:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_action...' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`pa...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`pa...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`pa...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`pa...', Array, false)
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(106): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(68): App\Libraries\Functions::userrole('home')
+#6 C:\xampp\htdocs\etkal\app\Controllers\Users.php(81): App\Libraries\Functions::pagedata()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Users->index()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-02-24 20:37:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_action...' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date` `u`.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `rp`.`page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND 0 = \'ur.expiry_date >= CURRENT_DATE() OR ur.expiry_date IS NULL\'
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date` `u`.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `rp`.`page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND 0 = \'ur.expiry_date >= CURRENT_DATE() OR ur.expiry_date IS NULL\'
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date` `u`.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `rp`.`page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = \'dwtk.ayele@gmail.com\'
+AND `ur`.`flag` = 1
+AND `p`.`flag` = 1
+AND `pc`.`flag` = 1
+AND 0 = \'ur.expiry_date >= CURRENT_DATE() OR ur.expiry_date IS NULL\'
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `pc`.`page_category_id`, `pc`.`category`, `pc`.`link`, `pc`.`icon`, `pc`.`view_order`, `pc`.`sefix_html`, `p`.`page`, `p`.`page_link`, `p`.`page_icon`, `p`.`page_view_order`, `p`.`page_sefix`, `p`.`category_id`, `ra`.`role_action_id`, `ra`.`action`, `ur`.`comment`, `ur`.`created_at`, `ur`.`updated_at`, `ur`.`expiry_date` `u`.`role_id`, `u`.`dictionary_flag`
+FROM `user_roles` AS `ur`
+JOIN `role_actions` AS `ra` ON `ur`.`role_action_id` = `ra`.`role_action_id`
+JOIN `rolepage` AS `rp` ON `ur`.`role_page_id` = `rp`.`rolepage_id`
+JOIN `pages` AS `p` ON `rp`.`page_id` = `p`.`page_id`
+JOIN `page_categories` AS `pc` ON `p`.`category_id` = `pc`.`page_category_id`
+JOIN `users` AS `u` ON `ur`.`user_id` = `u`.`user_id`
+WHERE `u`.`email` = :u.email:
+AND `ur`.`flag` = :ur.flag:
+AND `p`.`flag` = :p.flag:
+AND `pc`.`flag` = :pc.flag:
+AND 0 = :0:
+GROUP BY `p`.`page_id`
+ORDER BY `pc`.`view_order` ASC, `p`.`page_view_order` ASC', [...], false)
+ 5 APPPATH\Libraries\Functions.php(106): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Libraries\Functions.php(68): App\Libraries\Functions::userrole('home')
+ 7 APPPATH\Controllers\Users.php(81): App\Libraries\Functions::pagedata()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Users->index()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 20:38:20 --> Undefined array key "dictionary_flag"
+in APPPATH\Libraries\Functions.php on line 109.
+ 1 APPPATH\Libraries\Functions.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dictionary_flag"', 'APPPATH\\Libraries\\Functions.php', 109)
+ 2 APPPATH\Libraries\Functions.php(68): App\Libraries\Functions::userrole('home')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-24 20:39:56 --> Undefined array key "dictionary_flag"
+in APPPATH\Libraries\Functions.php on line 109.
+ 1 APPPATH\Libraries\Functions.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dictionary_flag"', 'APPPATH\\Libraries\\Functions.php', 109)
+ 2 APPPATH\Libraries\Functions.php(68): App\Libraries\Functions::userrole('home')
+ 3 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Users->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

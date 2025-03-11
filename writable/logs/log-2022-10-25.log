@@ -1,0 +1,27 @@
+ERROR - 2022-10-25 21:02:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'YOUR QUERY HERE' at line 1 in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('YOUR QUERY HERE', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+#3 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(49): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+#4 C:\xampp\htdocs\etkal\app\Libraries\Functions.php(41): App\Libraries\Functions::userrole(NULL)
+#5 C:\xampp\htdocs\etkal\app\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+#6 C:\xampp\htdocs\etkal\app\Controllers\Home.php(16): App\Controllers\Users->__construct()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(869): App\Controllers\Home->__construct()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-10-25 21:02:50 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'YOUR QUERY HERE' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('YOUR QUERY HERE', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('YOUR QUERY HERE')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('YOUR QUERY HERE')
+ 4 APPPATH\Libraries\Functions.php(49): CodeIgniter\Database\BaseConnection->query('YOUR QUERY HERE')
+ 5 APPPATH\Libraries\Functions.php(41): App\Libraries\Functions::userrole(null)
+ 6 APPPATH\Controllers\Users.php(26): App\Libraries\Functions::pagedata()
+ 7 APPPATH\Controllers\Home.php(16): App\Controllers\Users->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Home->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

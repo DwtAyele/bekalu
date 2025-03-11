@@ -1,0 +1,542 @@
+CRITICAL - 2022-12-24 19:51:34 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 128.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:56:23 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:57:11 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:57:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:57:12 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:57:53 --> array_merge(): Argument #1 must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 58.
+ 1 APPPATH\Controllers\Meaning.php(58): array_merge(null, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:58:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Meaning.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 19:59:07 --> array_merge(): Argument #1 must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 58.
+ 1 APPPATH\Controllers\Meaning.php(58): array_merge(null, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:00:10 --> array_merge(): Argument #1 must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 57.
+ 1 APPPATH\Controllers\Meaning.php(57): array_merge(null, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:00:55 --> array_merge(): Argument #1 must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 56.
+ 1 APPPATH\Controllers\Meaning.php(56): array_merge(null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:01:15 --> CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, null given, called in C:\xampp\htdocs\etkal\system\Controller.php on line 184
+in SYSTEMPATH\Validation\Validation.php on line 463.
+ 1 SYSTEMPATH\Controller.php(184): CodeIgniter\Validation\Validation->setRules(null, [])
+ 2 SYSTEMPATH\Controller.php(138): CodeIgniter\Controller->setValidator(null, [])
+ 3 APPPATH\Controllers\Meaning.php(62): CodeIgniter\Controller->validate(null)
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:02:06 --> array_merge(): Argument #1 must be of type array, null given
+in APPPATH\Controllers\Meaning.php on line 58.
+ 1 APPPATH\Controllers\Meaning.php(58): array_merge(null, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:03:27 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:05:04 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 128.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:06:34 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 128.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:06:37 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 128.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:07:58 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 117.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:09:57 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 117.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:12:07 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 117.
+ 1 APPPATH\Controllers\Meaning.php(53): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:13:49 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:15:16 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:17:36 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:19:45 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:19:59 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:20:24 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:22:50 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:22:57 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:23:10 --> Cannot access offset of type string on string
+in APPPATH\Libraries\Functions.php on line 128.
+ 1 APPPATH\Controllers\Meaning.php(141): App\Libraries\Functions->getrules('2,6,7,41,48,55,56,62,76,93,123,147,162')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:24:41 --> Please select language. is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 323.
+ 1 SYSTEMPATH\Validation\Validation.php(323): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('Please select language.')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('errors', 'errors', null, [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Meaning.php(64): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->addmeaning()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:41:55 --> Undefined array key "word"
+in APPPATH\Controllers\Meaning.php on line 224.
+ 1 APPPATH\Controllers\Meaning.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "word"', 'APPPATH\\Controllers\\Meaning.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:42:43 --> Attempt to read property "word" on array
+in APPPATH\Controllers\Meaning.php on line 224.
+ 1 APPPATH\Controllers\Meaning.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Controllers\\Meaning.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:42:45 --> Attempt to read property "word" on array
+in APPPATH\Controllers\Meaning.php on line 224.
+ 1 APPPATH\Controllers\Meaning.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Controllers\\Meaning.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:42:45 --> Attempt to read property "word" on array
+in APPPATH\Controllers\Meaning.php on line 224.
+ 1 APPPATH\Controllers\Meaning.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "word" on array', 'APPPATH\\Controllers\\Meaning.php', 224)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 20:54:46 --> Undefined property: App\Controllers\Meaning::$validate
+in APPPATH\Controllers\Meaning.php on line 225.
+ 1 APPPATH\Controllers\Meaning.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$validate', 'APPPATH\\Controllers\\Meaning.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:00:52 --> Undefined property: App\Controllers\Meaning::$validate
+in APPPATH\Controllers\Meaning.php on line 225.
+ 1 APPPATH\Controllers\Meaning.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$validate', 'APPPATH\\Controllers\\Meaning.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:00:53 --> Undefined property: App\Controllers\Meaning::$validate
+in APPPATH\Controllers\Meaning.php on line 225.
+ 1 APPPATH\Controllers\Meaning.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$validate', 'APPPATH\\Controllers\\Meaning.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:00:56 --> Undefined property: App\Controllers\Meaning::$validate
+in APPPATH\Controllers\Meaning.php on line 225.
+ 1 APPPATH\Controllers\Meaning.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$validate', 'APPPATH\\Controllers\\Meaning.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:05:42 --> Undefined array key "pronuncation"
+in APPPATH\Controllers\Meaning.php on line 225.
+ 1 APPPATH\Controllers\Meaning.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pronuncation"', 'APPPATH\\Controllers\\Meaning.php', 225)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '358')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:44:56 --> Array to string conversion
+in APPPATH\Views\dictionary\import.php on line 19.
+ 1 APPPATH\Views\dictionary\import.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dictionary\\import.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(163): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 21:53:06 --> Undefined variable $word
+in APPPATH\Views\dictionary\edit.php on line 45.
+ 1 APPPATH\Views\dictionary\edit.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $word', 'APPPATH\\Views\\dictionary\\edit.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\Meaning.php(266): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 22:02:20 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\default.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views/default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+10 APPPATH\Controllers\Meaning.php(266): view('dictionary/edit', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 22:03:25 --> Illegal offset type
+in APPPATH\Controllers\Meaning.php on line 215.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 22:39:36 --> Undefined array key 0
+in APPPATH\Controllers\Meaning.php on line 222.
+ 1 APPPATH\Controllers\Meaning.php(222): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Meaning.php', 222)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('1', '5')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 23:13:47 --> Undefined variable $accessibility2
+in APPPATH\Views\dictionary\edit.php on line 62.
+ 1 APPPATH\Views\dictionary\edit.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $accessibility2', 'APPPATH\\Views\\dictionary\\edit.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\Meaning.php(277): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 23:24:24 --> Undefined variable $languagefrom
+in APPPATH\Views\dictionary\edit.php on line 70.
+ 1 APPPATH\Views\dictionary\edit.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $languagefrom', 'APPPATH\\Views\\dictionary\\edit.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\Meaning.php(277): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 23:26:06 --> Undefined variable $languagefrom_id
+in APPPATH\Views\dictionary\edit.php on line 70.
+ 1 APPPATH\Views\dictionary\edit.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $languagefrom_id', 'APPPATH\\Views\\dictionary\\edit.php', 70)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/edit', [], true)
+ 5 APPPATH\Controllers\Meaning.php(277): view('dictionary/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-24 23:41:08 --> Undefined array key "languageto_id"
+in APPPATH\Controllers\Meaning.php on line 243.
+ 1 APPPATH\Controllers\Meaning.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "languageto_id"', 'APPPATH\\Controllers\\Meaning.php', 243)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-24 23:42:25 --> mysqli_sql_exception: Unknown column 'm.languageto_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-24 23:42:25 --> Unknown column 'm.languageto_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-24 23:42:30 --> mysqli_sql_exception: Unknown column 'm.languageto_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-24 23:42:30 --> Unknown column 'm.languageto_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-24 23:42:32 --> mysqli_sql_exception: Unknown column 'm.languageto_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMB...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMB...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMB...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMB...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-12-24 23:42:32 --> Unknown column 'm.languageto_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT ROW_NUMBER() over ( order by words.word_id ASC) AS row_num, `words`.*, `words`.`Language_id` AS `languagefrom_id`, `m`.*, `m`.`languageto_id` AS `languageto_id`, `ps`.`abbreviation`, `wm`.`word_meaning_id`, `wm`.`user_id`, `wm`.`dictionary_id`, `wm`.`comment_page_no`, `wm`.`num_like`, `wm`.`num_dislike`, `d`.`short_name`
+FROM `words`
+JOIN `word_meaning` as `wm` ON `words`.`word_id` = `wm`.`word_id`
+JOIN `meanings` AS `m` ON `wm`.`meaning_id` = `m`.`meaning_id`
+JOIN `dictionary` AS `d` ON `wm`.`dictionary_id` = `d`.`dictionary_id`
+LEFT JOIN `parts_of_speechs` AS `ps` ON `m`.`part_of_speech_id` = `ps`.`part_of_speech_id`
+WHERE `words`.`word_id` = :words.word_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\WordsModel.php(85): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(220): App\Models\WordsModel->getword('11')
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->edit('11', '13')
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

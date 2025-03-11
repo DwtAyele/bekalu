@@ -1,0 +1,221 @@
+CRITICAL - 2022-12-17 14:18:55 --> Undefined variable $title
+in APPPATH\Views\partials\header.php on line 8.
+ 1 APPPATH\Views\partials\header.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\partials\\header.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('partials/header', null, true)
+ 5 APPPATH\Views\default.php(1): CodeIgniter\View\View->include('partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\default.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('Views\\default', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+10 APPPATH\Controllers\Meaning.php(146): view('dictionary/import')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:18 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:21 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:21 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:21 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:22 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:30:22 --> Undefined variable $numRows
+in APPPATH\Views\dictionary\import.php on line 16.
+ 1 APPPATH\Views\dictionary\import.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $numRows', 'APPPATH\\Views\\dictionary\\import.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\import.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/import', [], true)
+ 5 APPPATH\Controllers\Meaning.php(191): view('dictionary/import', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:36:15 --> Undefined property: App\Controllers\Meaning::$excel_reader
+in APPPATH\Controllers\Meaning.php on line 182.
+ 1 APPPATH\Controllers\Meaning.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$excel_reader', 'APPPATH\\Controllers\\Meaning.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:37:44 --> Undefined property: App\Controllers\Meaning::$load
+in APPPATH\Controllers\Meaning.php on line 179.
+ 1 APPPATH\Controllers\Meaning.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$load', 'APPPATH\\Controllers\\Meaning.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:40:33 --> Undefined property: App\Controllers\Meaning::$load
+in APPPATH\Controllers\Meaning.php on line 179.
+ 1 APPPATH\Controllers\Meaning.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$load', 'APPPATH\\Controllers\\Meaning.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:40:36 --> Undefined property: App\Controllers\Meaning::$load
+in APPPATH\Controllers\Meaning.php on line 179.
+ 1 APPPATH\Controllers\Meaning.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$load', 'APPPATH\\Controllers\\Meaning.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:50:01 --> Undefined property: App\Controllers\Meaning::$load
+in APPPATH\Controllers\Meaning.php on line 178.
+ 1 APPPATH\Controllers\Meaning.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Meaning::$load', 'APPPATH\\Controllers\\Meaning.php', 178)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:50:42 --> Non-static method App\Libraries\Excel_reader::read() cannot be called statically
+in APPPATH\Controllers\Meaning.php on line 179.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:52:11 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read('1671331931_d378b0ef31803154a7f7.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:52:26 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read('1671331946_077e73bde54d74ece461.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:54:01 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:54:48 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671332088_0af3fe31811a49ced3fc.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:55:42 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:55:54 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 18:57:23 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(183): App\Libraries\Excel_reader->read(Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:00:36 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(184): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671332436_cf4aaf235e78d13bed9b.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:00:50 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(184): App\Libraries\Excel_reader->read('FCPATH\\public\\asset\\import\\1671332450_71a0e2714a5c350bedd6.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:01:38 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(184): App\Libraries\Excel_reader->read('./import/1671332498_3b538bb8b64582dbe738.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:01:44 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(184): App\Libraries\Excel_reader->read('./import/1671332504_104d95c9352dba8f45fa.xlsx')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:03:27 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(184): App\Libraries\Excel_reader->read('./import/1671332607_15d1e1c4e3788da65be1.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:04:25 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(185): App\Libraries\Excel_reader->read('./import/1671332665_7099b9faddc55bb0b77b.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-17 19:09:27 --> Call to a member function read() on null
+in APPPATH\Libraries\Excel_reader.php on line 384.
+ 1 APPPATH\Controllers\Meaning.php(185): App\Libraries\Excel_reader->read('./import/1671332967_1423ca6765c2fe51d96f.xls')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->importdata()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

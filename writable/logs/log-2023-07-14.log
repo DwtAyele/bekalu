@@ -1,0 +1,489 @@
+CRITICAL - 2023-07-14 11:53:50 --> Undefined variable $alphabet_order
+in APPPATH\Views\dictionary\wordmeaninglist.php on line 134.
+ 1 APPPATH\Views\dictionary\wordmeaninglist.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alphabet_order', 'APPPATH\\Views\\dictionary\\wordmeaninglist.php', 134)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 5 APPPATH\Controllers\Meaning.php(149): view('dictionary/wordmeaninglist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:54:13 --> Undefined variable $alphabet_order
+in APPPATH\Views\dictionary\wordmeaninglist.php on line 134.
+ 1 APPPATH\Views\dictionary\wordmeaninglist.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alphabet_order', 'APPPATH\\Views\\dictionary\\wordmeaninglist.php', 134)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 5 APPPATH\Controllers\Meaning.php(149): view('dictionary/wordmeaninglist', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:55:33 --> Trying to access array offset on value of type null
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 65.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\DictionaryAlphabetOrdersModel.php', 65)
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:56:50 --> Trying to access array offset on value of type null
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 66.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Models\\DictionaryAlphabetOrdersModel.php', 66)
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:57:44 --> Call to undefined method App\Models\DictionaryAlphabetOrdersModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(63): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 11:58:04 --> mysqli_sql_exception: Not unique table/alias: 'dictionary_alphabet_orders' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryAlphabetOrdersModel.php(63): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-14 11:58:04 --> Not unique table/alias: 'dictionary_alphabet_orders'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`, `dictionary_alphabet_orders`, `language`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`, `dictionary_alphabet_orders`, `language`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`, `dictionary_alphabet_orders`, `language`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`, `dictionary_alphabet_orders`, `language`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryAlphabetOrdersModel.php(63): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:58:20 --> Call to undefined method App\Models\DictionaryAlphabetOrdersModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(65): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:58:21 --> Call to undefined method App\Models\DictionaryAlphabetOrdersModel::getResult
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(65): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:59:29 --> Call to undefined method App\Models\DictionaryAlphabetOrdersModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(65): CodeIgniter\Model->__call('getResultArray', [])
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 11:59:30 --> Call to undefined method App\Models\DictionaryAlphabetOrdersModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DictionaryAlphabetOrdersModel.php(65): CodeIgniter\Model->__call('getResultArray', [])
+ 2 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 12:04:32 --> mysqli_sql_exception: Unknown column 'language.language_id' in 'field list' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryAlphabetOrdersModel.php(64): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-14 12:04:32 --> Unknown column 'language.language_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `language`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryAlphabetOrdersModel.php(64): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-14 12:04:51 --> mysqli_sql_exception: Unknown column 'language.language_id' in 'where clause' in C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\etkal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT...', 0)
+#1 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 C:\xampp\htdocs\etkal\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 C:\xampp\htdocs\etkal\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 C:\xampp\htdocs\etkal\system\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\etkal\app\Models\DictionaryAlphabetOrdersModel.php(64): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\etkal\app\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+#7 C:\xampp\htdocs\etkal\system\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+#8 C:\xampp\htdocs\etkal\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+#9 C:\xampp\htdocs\etkal\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\etkal\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-14 12:04:51 --> Unknown column 'language.language_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT DISTINCT `lan`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT `lan`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT `lan`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `lan`.`language_id`, `language_name`
+FROM `dictionary_alphabet_orders`
+JOIN `language` as `lan` ON `dictionary_alphabet_orders`.`language_id` = `lan`.`language_id`
+WHERE `dictionary_alphabet_orders`.`language_id` = `language`.`language_id`', [], false)
+ 5 SYSTEMPATH\Model.php(772): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\DictionaryAlphabetOrdersModel.php(64): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 8 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:05:06 --> Call to a member function getResultArray() on array
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 66.
+ 1 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:05:26 --> Cannot use object of type stdClass as array
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 67.
+ 1 APPPATH\Controllers\Meaning.php(117): App\Models\DictionaryAlphabetOrdersModel->get_dictionaryalphabetorder_groupdropdown()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:11:16 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 75513856 bytes)
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 12:12:11 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 75513856 bytes)
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 12:12:47 --> Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 12:14:00 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 75513856 bytes)
+in APPPATH\Models\DictionaryAlphabetOrdersModel.php on line 66.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-14 12:18:07 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:18:35 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:22:16 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:23:53 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:23:56 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:31:03 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:31:31 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:32:28 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:33:03 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:33:28 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:34:29 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:35:23 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:35:49 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:37:30 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:37:47 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:38:48 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:43:51 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:45:21 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:45:50 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:46:39 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:46:42 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 12:47:06 --> Array to string conversion
+in SYSTEMPATH\Helpers\form_helper.php on line 324.
+ 1 SYSTEMPATH\Helpers\form_helper.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'SYSTEMPATH\\Helpers\\form_helper.php', 324)
+ 2 APPPATH\Views\dictionary\wordmeaninglist.php(134): form_dropdown('alphabet_order', [...], [...], ' class="form-control select2" style="width: 100%"')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dictionary\\wordmeaninglist.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('dictionary/wordmeaninglist', [], true)
+ 6 APPPATH\Controllers\Meaning.php(151): view('dictionary/wordmeaninglist', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-14 21:26:39 --> Division by zero
+in SYSTEMPATH\Pager\Pager.php on line 148.
+ 1 SYSTEMPATH\BaseModel.php(1085): CodeIgniter\Pager\Pager->store('default', 1, 0, 240, 0)
+ 2 APPPATH\Controllers\Meaning.php(134): CodeIgniter\BaseModel->paginate(0)
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Meaning->wordmeaninglist()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Meaning))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

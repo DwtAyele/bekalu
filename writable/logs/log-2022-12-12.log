@@ -1,0 +1,12 @@
+CRITICAL - 2022-12-12 14:26:19 --> Too few arguments to function App\Controllers\Search::searchword(), 0 passed in C:\xampp\htdocs\etkal\system\CodeIgniter.php on line 907 and at least 1 expected
+in APPPATH\Controllers\Search.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-12 14:26:46 --> Too few arguments to function App\Controllers\Search::searchword(), 0 passed in C:\xampp\htdocs\etkal\system\CodeIgniter.php on line 907 and at least 1 expected
+in APPPATH\Controllers\Search.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Search->searchword()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
